@@ -31,7 +31,7 @@ from optparse import OptionParser
 
 
 # 连接到MongoDB数据库
-client = MongoClient("mongodb://root:UdMKkCbmzLMr3D5k@1.1.1.1:27017")
+client = MongoClient("mongodb://root:UdMKkCbmzLMr3D5k@47.xxx.100.xx:27017")
 
 if client is not None:
     print("Connected to MongoDB")

@@ -3,7 +3,7 @@ import json
 from concurrent.futures import ThreadPoolExecutor
 from pymongo import MongoClient
 
-# 47.243.101.35:27017
+# 47.xxx.100.xx:27017
 
 # haosexiansheng
 # 7t7bPbWC5FJ2ZhHG
@@ -12,7 +12,7 @@ from pymongo import MongoClient
 # UdMKkCbmzLMr3D5k
 
 # 连接到MongoDB数据库
-client = MongoClient("mongodb://root:UdMKkCbmzLMr3D5k@47.243.101.35:27017")
+client = MongoClient("mongodb://root:UdMKkCbmzLMr3D5k@47.xxx.100.xx:27017")
 
 if client is not None:
     print("Connected to MongoDB")
