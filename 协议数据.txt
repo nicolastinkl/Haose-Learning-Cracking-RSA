@@ -1,0 +1,1012 @@
+00000020  62 63 30 63 74 61 37 6e 70 51 68 4e 78 5a 6c 4a  bc0cta7npQhNxZlJ
+00000030  37 4b 67 53 77 3d 3d 22 2c 22 61 70 70 5f 69 6e  7KgSw==","app_in
+00000040  66 6f 22 3a 22 39 31 78 6a 5f 69 4f 53 22 7d     fo":"91xj_iOS"}
+[+] Before Encrypt: {"cmd_version":3,"client_did":"Bbc0cta7npQhNxZlJ7KgSw==","app_info":"91xj_iOS"}
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef  .. ..v%..*......
+[+] KEY Length --> 128
+[+] KEY: aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  b5 3d 8e d7 6d d1 46 6c e6 e7 cf 61 94 fe 91 e2  .=..m.Fl...a....
+[+] IV: b5 3d 8e d7 6d d1 46 6c e6 e7 cf 61 94 fe 91 e2
+[+] After Encrypt: Zv5KsUqdvsfJu1T2fvkRt0w5cQO5Kg6Px+HAcojwKzt92mNu+Vh2cqUEUeR4YfqNBnFFJ9jVY8JKnRNvJsySLF5gngOFl7S/oqHxfaYkKhw=
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+	ACCURATE Backtrace:
+	0x102f2b888 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseDecrypt:key:cbcFlag:pos:]
+	0x102f2c29c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils decryptWithCBC:key:]
+	0x102f187d8 xianshen!0x247d8 (0x1000247d8)
+	0x1043915c4 FLEX4Framework!0x5d5c4 (0x5d5c4)
+	0x22180f688 CFNetwork!__75-[__NSURLSessionLocal taskForClass:request:uploadFile:bodyData:completion:]_block_invoke
+	0x221823220 CFNetwork!__49-[__NSCFLocalSessionTask _task_onqueue_didFinish]_block_invoke
+	0x221c9fcf4 Foundation!__NSBLOCKOPERATION_IS_CALLING_OUT_TO_A_BLOCK__
+	0x221babdc0 Foundation!-[NSBlockOperation main]
+	0x221bab2a8 Foundation!-[__NSOperationInternal _start:]
+	0x221ca1a78 Foundation!__NSOQSchedule_f
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c1e01c libdispatch.dylib!_dispatch_continuation_pop$VARIANT$mp
+	0x220c1d79c libdispatch.dylib!_dispatch_async_redirect_invoke
+	0x220c2a030 libdispatch.dylib!_dispatch_root_queue_drain
+	0x220c2a8d4 libdispatch.dylib!_dispatch_worker_thread2
+[+] CCAlgorithm: 0x0 --> AES Decrypt
+[+] CCOptions: 0x1 --> mode CBC
+[+] Before Decrypt: V6uVtEbuOlmvyaMs3l2/Hn7S0wUmKP2pOyE519SDR+EMvLYdtaXKirIIajN+MiTjA/BkaZBmXkTH42GHxiCBjJwGdWTv7edVgUn66sOBZ6SJSFYKHlophQviyervZNSQ
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef  .. ..v%..*......
+[+] KEY Length --> 128
+[+] KEY: aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  30 29 e1 0f 93 d2 d9 9b 70 ad 02 a7 83 00 fd 40  0)......p......@
+[+] IV: 30 29 e1 0f 93 d2 d9 9b 70 ad 02 a7 83 00 fd 40
+[+] After Decrypt: {"cmd_version":3,"client_ip":"125.70.77.49","heartbeat_sec":8,"result":false,"cmd_info":null}
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+	ACCURATE Backtrace:
+	0x102f2b3ac /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseEncrypt:key:cbcFlag:pos:]
+	0x102f2be1c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils encryptWithCBC:key:]
+	0x102f1853c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[vGrowthConnectUtils sendvGrowthHttpPost:host:path:aesKey:json:callback:errorCallback:]
+	0x102efc818 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RNServiceConnect rnSendvGrowthHttpPost:host:path:aesKey:data:resolve:rejecter:]
+	0x221242010 CoreFoundation!__invoking___
+	0x221123be0 CoreFoundation!-[NSInvocation invoke]
+	0x221124814 CoreFoundation!-[NSInvocation invokeWithTarget:]
+	0x1030b00a8 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RCTModuleMethod invokeWithBridge:module:arguments:]
+	0x1030b26ac xianshen!0x1be6ac (0x1001be6ac)
+	0x1030b22dc xianshen!0x1be2dc (0x1001be2dc)
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c22324 libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$mp
+	0x220c22e40 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$mp
+	0x220c2b4ac libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x220e5a114 libsystem_pthread.dylib!_pthread_wqthread
+[+] CCAlgorithm: 0x0 --> AES Encrypt
+[+] CCOptions: 0x1 --> mode CBC
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  7b 22 63 6d 64 5f 76 65 72 73 69 6f 6e 22 3a 33  {"cmd_version":3
+00000010  2c 22 63 6c 69 65 6e 74 5f 64 69 64 22 3a 22 42  ,"client_did":"B
+00000020  62 63 30 63 74 61 37 6e 70 51 68 4e 78 5a 6c 4a  bc0cta7npQhNxZlJ
+00000030  37 4b 67 53 77 3d 3d 22 2c 22 61 70 70 5f 69 6e  7KgSw==","app_in
+00000040  66 6f 22 3a 22 39 31 78 6a 5f 69 4f 53 22 7d     fo":"91xj_iOS"}
+[+] Before Encrypt: {"cmd_version":3,"client_did":"Bbc0cta7npQhNxZlJ7KgSw==","app_info":"91xj_iOS"}
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef  .. ..v%..*......
+[+] KEY Length --> 128
+[+] KEY: aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  e8 0b f5 12 4f a1 52 2b b4 6f 67 24 77 93 36 b4  ....O.R+.og$w.6.
+[+] IV: e8 0b f5 12 4f a1 52 2b b4 6f 67 24 77 93 36 b4
+[+] After Encrypt: W+CV2vUWIoCyMSIjrZkj8kugIYTEMMdRvQhVMWqSrtb3CuYxYyrEu5wamRNfkUmNKiK6sg0/0U0NFXbee7O5paBQ//VAKn9vsTIzbvFJOpU=
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+	ACCURATE Backtrace:
+	0x102f2b888 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseDecrypt:key:cbcFlag:pos:]
+	0x102f2c29c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils decryptWithCBC:key:]
+	0x102f187d8 xianshen!0x247d8 (0x1000247d8)
+	0x1043915c4 FLEX4Framework!0x5d5c4 (0x5d5c4)
+	0x22180f688 CFNetwork!__75-[__NSURLSessionLocal taskForClass:request:uploadFile:bodyData:completion:]_block_invoke
+	0x221823220 CFNetwork!__49-[__NSCFLocalSessionTask _task_onqueue_didFinish]_block_invoke
+	0x221c9fcf4 Foundation!__NSBLOCKOPERATION_IS_CALLING_OUT_TO_A_BLOCK__
+	0x221babdc0 Foundation!-[NSBlockOperation main]
+	0x221bab2a8 Foundation!-[__NSOperationInternal _start:]
+	0x221ca1a78 Foundation!__NSOQSchedule_f
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c1e01c libdispatch.dylib!_dispatch_continuation_pop$VARIANT$mp
+	0x220c1d79c libdispatch.dylib!_dispatch_async_redirect_invoke
+	0x220c2a030 libdispatch.dylib!_dispatch_root_queue_drain
+	0x220c2a8d4 libdispatch.dylib!_dispatch_worker_thread2
+[+] CCAlgorithm: 0x0 --> AES Decrypt
+[+] CCOptions: 0x1 --> mode CBC
+[+] Before Decrypt: W0qAN+AtITetCA0KpCtNOvT9xKmuZEdxP4zR4CpCl0FmpCLqkFHgjZLJyT/x8dxcDB4sHE/TuL3yOd2MtnFrX95F3rzUcO10tUNhino30IINqh0rf5Gli/Ohq2A4f1Ny
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef  .. ..v%..*......
+[+] KEY Length --> 128
+[+] KEY: aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  6e 8b ca 7c 49 09 79 69 2e 08 a5 de 32 81 6f d6  n..|I.yi....2.o.
+[+] IV: 6e 8b ca 7c 49 09 79 69 2e 08 a5 de 32 81 6f d6
+[+] After Decrypt: {"cmd_version":3,"client_ip":"125.70.77.49","heartbeat_sec":8,"result":false,"cmd_info":null}
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+[+] --------------------------------------------------------------
+	ACCURATE Backtrace:
+	0x102f2b3ac /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseEncrypt:key:cbcFlag:pos:]
+	0x102f2be1c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils encryptWithCBC:key:]
+	0x102f1853c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[vGrowthConnectUtils sendvGrowthHttpPost:host:path:aesKey:json:callback:errorCallback:]
+	0x102efc818 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RNServiceConnect rnSendvGrowthHttpPost:host:path:aesKey:data:resolve:rejecter:]
+	0x221242010 CoreFoundation!__invoking___
+	0x221123be0 CoreFoundation!-[NSInvocation invoke]
+	0x221124814 CoreFoundation!-[NSInvocation invokeWithTarget:]
+	0x1030b00a8 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RCTModuleMethod invokeWithBridge:module:arguments:]
+	0x1030b26ac xianshen!0x1be6ac (0x1001be6ac)
+	0x1030b22dc xianshen!0x1be2dc (0x1001be2dc)
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c22324 libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$mp
+	0x220c22e40 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$mp
+	0x220c2b4ac libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x220e5a114 libsystem_pthread.dylib!_pthread_wqthread
+[+] CCAlgorithm: 0x0 --> AES Encrypt
+[+] CCOptions: 0x1 --> mode CBC
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  7b 22 63 6d 64 5f 76 65 72 73 69 6f 6e 22 3a 33  {"cmd_version":3
+00000010  2c 22 63 6c 69 65 6e 74 5f 64 69 64 22 3a 22 42  ,"client_did":"B
+00000020  62 63 30 63 74 61 37 6e 70 51 68 4e 78 5a 6c 4a  bc0cta7npQhNxZlJ
+00000030  37 4b 67 53 77 3d 3d 22 2c 22 61 70 70 5f 69 6e  7KgSw==","app_in
+00000040  66 6f 22 3a 22 39 31 78 6a 5f 69 4f 53 22 7d     fo":"91xj_iOS"}
+[+] Before Encrypt: {"cmd_version":3,"client_did":"Bbc0cta7npQhNxZlJ7KgSw==","app_info":"91xj_iOS"}
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef  .. ..v%..*......
+[+] KEY Length --> 128
+[+] KEY: aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  59 36 19 90 2a c4 ca b8 15 62 02 2b e5 81 77 27  Y6..*....b.+..w'
+[+] IV: 59 36 19 90 2a c4 ca b8 15 62 02 2b e5 81 77 27
+[+] After Encrypt: 6Bfm7ItP+nIiZl8zpR84TsKyp1b89gMBedeslUG0TiRY9SCQghRI8khiJZU2g74ZfkvNA9E+VM61w/W08exLhx+XVPFwh5saic52c7bF+NY=
+[-] --------------------------------------------------------------
+
+	ACCURATE Backtrace:
+	0x102f2b888 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseDecrypt:key:cbcFlag:pos:]
+	0x102f2c29c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils decryptWithCBC:key:]
+	0x102f187d8 xianshen!0x247d8 (0x1000247d8)
+	0x1043915c4 FLEX4Framework!0x5d5c4 (0x5d5c4)
+	0x22180f688 CFNetwork!__75-[__NSURLSessionLocal taskForClass:request:uploadFile:bodyData:completion:]_block_invoke
+	0x221823220 CFNetwork!__49-[__NSCFLocalSessionTask _task_onqueue_didFinish]_block_invoke
+	0x221c9fcf4 Foundation!__NSBLOCKOPERATION_IS_CALLING_OUT_TO_A_BLOCK__
+	0x221babdc0 Foundation!-[NSBlockOperation main]
+	0x221bab2a8 Foundation!-[__NSOperationInternal _start:]
+	0x221ca1a78 Foundation!__NSOQSchedule_f
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c1e01c libdispatch.dylib!_dispatch_continuation_pop$VARIANT$mp
+	0x220c1d6e0 libdispatch.dylib!_dispatch_async_redirect_invoke
+	0x220c2a030 libdispatch.dylib!_dispatch_root_queue_drain
+	0x220c2a8d4 libdispatch.dylib!_dispatch_worker_thread2
+[+] CCAlgorithm: 0x0 --> AES Decrypt
+[+] CCOptions: 0x1 --> mode CBC
+[+] Before Decrypt: Px/n39RA9DbWO/S2l90LniIKONKjAPQCtkn1NG3pJ8PTGLXCjOfqZ4J5kcFNKBSdz5cGEF39TL0YkbcXYpoLFtaBJ92TZC/fwtJ9YEGj5kFgEmrSChYsogxCunsdxCtK
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef  .. ..v%..*......
+[+] KEY Length --> 128
+[+] KEY: aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  ab e4 53 2f 65 bb d4 76 62 5b 2c 86 64 c8 ea 4b  ..S/e..vb[,.d..K
+[+] IV: ab e4 53 2f 65 bb d4 76 62 5b 2c 86 64 c8 ea 4b
+[+] After Decrypt: {"cmd_version":3,"client_ip":"125.70.77.49","heartbeat_sec":8,"result":false,"cmd_info":null}
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+	ACCURATE Backtrace:
+	0x102f2b3ac /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseEncrypt:key:cbcFlag:pos:]
+	0x102f2be1c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils encryptWithCBC:key:]
+	0x102f1853c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[vGrowthConnectUtils sendvGrowthHttpPost:host:path:aesKey:json:callback:errorCallback:]
+	0x102efc818 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RNServiceConnect rnSendvGrowthHttpPost:host:path:aesKey:data:resolve:rejecter:]
+	0x221242010 CoreFoundation!__invoking___
+	0x221123be0 CoreFoundation!-[NSInvocation invoke]
+	0x221124814 CoreFoundation!-[NSInvocation invokeWithTarget:]
+	0x1030b00a8 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RCTModuleMethod invokeWithBridge:module:arguments:]
+	0x1030b26ac xianshen!0x1be6ac (0x1001be6ac)
+	0x1030b22dc xianshen!0x1be2dc (0x1001be2dc)
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c22324 libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$mp
+	0x220c22e40 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$mp
+	0x220c2b4ac libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x220e5a114 libsystem_pthread.dylib!_pthread_wqthread
+[+] CCAlgorithm: 0x0 --> AES Encrypt
+[+] CCOptions: 0x1 --> mode CBC
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  7b 22 63 6d 64 5f 76 65 72 73 69 6f 6e 22 3a 33  {"cmd_version":3
+00000010  2c 22 63 6c 69 65 6e 74 5f 64 69 64 22 3a 22 42  ,"client_did":"B
+00000020  62 63 30 63 74 61 37 6e 70 51 68 4e 78 5a 6c 4a  bc0cta7npQhNxZlJ
+00000030  37 4b 67 53 77 3d 3d 22 2c 22 61 70 70 5f 69 6e  7KgSw==","app_in
+00000040  66 6f 22 3a 22 39 31 78 6a 5f 69 4f 53 22 7d     fo":"91xj_iOS"}
+[+] Before Encrypt: {"cmd_version":3,"client_did":"Bbc0cta7npQhNxZlJ7KgSw==","app_info":"91xj_iOS"}
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef  .. ..v%..*......
+[+] KEY Length --> 128
+[+] KEY: aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  4b 3f 19 cd 5b e3 67 ae 7b 52 2c 8b ce 6d cb 0c  K?..[.g.{R,..m..
+[+] IV: 4b 3f 19 cd 5b e3 67 ae 7b 52 2c 8b ce 6d cb 0c
+[+] After Encrypt: rzo/KNW/L8ZRZLpZuUEXiQQpb9dsk3I6XaN8I7BGL21WN9P4D7F9PhRQ0DsDOKA7qlrIyKzksoCgoBe0csLBwu9jzYQkAMS9uPTOzOmhX90=
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+	ACCURATE Backtrace:
+	0x102f2b888 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseDecrypt:key:cbcFlag:pos:]
+	0x102f2c29c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils decryptWithCBC:key:]
+	0x102f187d8 xianshen!0x247d8 (0x1000247d8)
+	0x1043915c4 FLEX4Framework!0x5d5c4 (0x5d5c4)
+	0x22180f688 CFNetwork!__75-[__NSURLSessionLocal taskForClass:request:uploadFile:bodyData:completion:]_block_invoke
+	0x221823220 CFNetwork!__49-[__NSCFLocalSessionTask _task_onqueue_didFinish]_block_invoke
+	0x221c9fcf4 Foundation!__NSBLOCKOPERATION_IS_CALLING_OUT_TO_A_BLOCK__
+	0x221babdc0 Foundation!-[NSBlockOperation main]
+	0x221bab2a8 Foundation!-[__NSOperationInternal _start:]
+	0x221ca1a78 Foundation!__NSOQSchedule_f
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c1e01c libdispatch.dylib!_dispatch_continuation_pop$VARIANT$mp
+	0x220c1d6e0 libdispatch.dylib!_dispatch_async_redirect_invoke
+	0x220c2a030 libdispatch.dylib!_dispatch_root_queue_drain
+	0x220c2a8d4 libdispatch.dylib!_dispatch_worker_thread2
+[+] CCAlgorithm: 0x0 --> AES Decrypt
+[+] CCOptions: 0x1 --> mode CBC
+[+] Before Decrypt: QjNyWyVV7no4i7Ys6f2RWMpIsLojxwLhSVmhhIfIYPuesgEBHhgFF2Myo10aWKKwDz7Xt/OB/o3c+rA02rsHltF/QJt3/xf8s3xr2tQNskoOGLagtctxSiRrrCWjsCTQ
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef  .. ..v%..*......
+[+] KEY Length --> 128
+[+] KEY: aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  3b aa d1 e3 80 5c 7d 8b 4c 95 4c 2d a9 bc 0d 38  ;....\}.L.L-...8
+[+] IV: 3b aa d1 e3 80 5c 7d 8b 4c 95 4c 2d a9 bc 0d 38
+[+] After Decrypt: {"cmd_version":3,"client_ip":"125.70.77.49","heartbeat_sec":8,"result":false,"cmd_info":null}
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+[iPhone::好色先生TV ]->
+[iPhone::好色先生TV ]-> 	ACCURATE Backtrace:
+	0x102f2b3ac /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseEncrypt:key:cbcFlag:pos:]
+	0x102f2be1c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils encryptWithCBC:key:]
+	0x102f1853c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[vGrowthConnectUtils sendvGrowthHttpPost:host:path:aesKey:json:callback:errorCallback:]
+	0x102efc818 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RNServiceConnect rnSendvGrowthHttpPost:host:path:aesKey:data:resolve:rejecter:]
+        0x221242010 CoreFoundation!__invoking___
+	0x221123be0 CoreFoundation!-[NSInvocation invoke]
+	0x221124814 CoreFoundation!-[NSInvocation invokeWithTarget:]
+	0x1030b00a8 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RCTModuleMethod invokeWithBridge:module:arguments:]
+	0x1030b26ac xianshen!0x1be6ac (0x1001be6ac)
+	0x1030b22dc xianshen!0x1be2dc (0x1001be2dc)
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c22324 libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$mp
+	0x220c22e40 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$mp
+	0x220c2b4ac libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x220e5a114 libsystem_pthread.dylib!_pthread_wqthread
+[+] CCAlgorithm: 0x0 --> AES Encrypt
+[+] CCOptions: 0x1 --> mode CBC
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  7b 22 63 6d 64 5f 76 65 72 73 69 6f 6e 22 3a 33  {"cmd_version":3
+00000010  2c 22 63 6c 69 65 6e 74 5f 64 69 64 22 3a 22 42  ,"client_did":"B
+00000020  62 63 30 63 74 61 37 6e 70 51 68 4e 78 5a 6c 4a  bc0cta7npQhNxZlJ
+00000030  37 4b 67 53 77 3d 3d 22 2c 22 61 70 70 5f 69 6e  7KgSw==","app_in
+00000040  66 6f 22 3a 22 39 31 78 6a 5f 69 4f 53 22 7d     fo":"91xj_iOS"}
+[+] Before Encrypt: {"cmd_version":3,"client_did":"Bbc0cta7npQhNxZlJ7KgSw==","app_info":"91xj_iOS"}
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef  .. ..v%..*......
+[+] KEY Length --> 128
+[+] KEY: aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  fa 35 c9 89 f9 ed bd f2 31 c2 a4 6d 01 22 01 78  .5......1..m.".x
+[+] IV: fa 35 c9 89 f9 ed bd f2 31 c2 a4 6d 01 22 01 78
+[+] After Encrypt: kGDFetKMdhb8ebzUy2bKmKkgoVLOhiMGFhfckJfMrWWKhtUNMh9ZcZOVsg8ZiRn9KJwMSyLDrQCWQBbnKc+a96nlwmxP6YBqGi8dVZUPoBI=
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+	ACCURATE Backtrace:
+	0x102f2b888 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseDecrypt:key:cbcFlag:pos:]
+	0x102f2c29c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils decryptWithCBC:key:]
+	0x102f187d8 xianshen!0x247d8 (0x1000247d8)
+	0x1043915c4 FLEX4Framework!0x5d5c4 (0x5d5c4)
+	0x22180f688 CFNetwork!__75-[__NSURLSessionLocal taskForClass:request:uploadFile:bodyData:completion:]_block_invoke
+	0x221823220 CFNetwork!__49-[__NSCFLocalSessionTask _task_onqueue_didFinish]_block_invoke
+	0x221c9fcf4 Foundation!__NSBLOCKOPERATION_IS_CALLING_OUT_TO_A_BLOCK__
+	0x221babdc0 Foundation!-[NSBlockOperation main]
+	0x221bab2a8 Foundation!-[__NSOperationInternal _start:]
+	0x221ca1a78 Foundation!__NSOQSchedule_f
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c1e01c libdispatch.dylib!_dispatch_continuation_pop$VARIANT$mp
+	0x220c1d6e0 libdispatch.dylib!_dispatch_async_redirect_invoke
+	0x220c2a030 libdispatch.dylib!_dispatch_root_queue_drain
+	0x220c2a8d4 libdispatch.dylib!_dispatch_worker_thread2
+[+] CCAlgorithm: 0x0 --> AES Decrypt
+[+] CCOptions: 0x1 --> mode CBC
+[+] Before Decrypt: 数据过大，忽略
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef  .. ..v%..*......
+[+] KEY Length --> 128
+[+] KEY: aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  cd 30 cf 37 2a f1 9c 94 c8 b6 6e a5 b5 c2 14 ca  .0.7*.....n.....
+[+] IV: cd 30 cf 37 2a f1 9c 94 c8 b6 6e a5 b5 c2 14 ca
+[+] After Decrypt: {"cmd_version":3,"client_ip":"125.70.77.49","heartbeat_sec":8,"result":false,"cmd_info":null}
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+	ACCURATE Backtrace:
+	0x102f2b3ac /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseEncrypt:key:cbcFlag:pos:]
+	0x102f2be1c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils encryptWithCBC:key:]
+	0x102f1853c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[vGrowthConnectUtils sendvGrowthHttpPost:host:path:aesKey:json:callback:errorCallback:]
+	0x102efc818 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RNServiceConnect rnSendvGrowthHttpPost:host:path:aesKey:data:resolve:rejecter:]
+	0x221242010 CoreFoundation!__invoking___
+	0x221123be0 CoreFoundation!-[NSInvocation invoke]
+	0x221124814 CoreFoundation!-[NSInvocation invokeWithTarget:]
+	0x1030b00a8 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RCTModuleMethod invokeWithBridge:module:arguments:]
+	0x1030b26ac xianshen!0x1be6ac (0x1001be6ac)
+	0x1030b22dc xianshen!0x1be2dc (0x1001be2dc)
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c22324 libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$mp
+	0x220c22e40 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$mp
+	0x220c2b4ac libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x220e5a114 libsystem_pthread.dylib!_pthread_wqthread
+[+] CCAlgorithm: 0x0 --> AES Encrypt
+[+] CCOptions: 0x1 --> mode CBC
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  7b 22 63 6d 64 5f 76 65 72 73 69 6f 6e 22 3a 33  {"cmd_version":3
+00000010  2c 22 63 6c 69 65 6e 74 5f 64 69 64 22 3a 22 42  ,"client_did":"B
+00000020  62 63 30 63 74 61 37 6e 70 51 68 4e 78 5a 6c 4a  bc0cta7npQhNxZlJ
+00000030  37 4b 67 53 77 3d 3d 22 2c 22 61 70 70 5f 69 6e  7KgSw==","app_in
+00000040  66 6f 22 3a 22 39 31 78 6a 5f 69 4f 53 22 7d     fo":"91xj_iOS"}
+[+] Before Encrypt: {"cmd_version":3,"client_did":"Bbc0cta7npQhNxZlJ7KgSw==","app_info":"91xj_iOS"}
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef  .. ..v%..*......
+[+] KEY Length --> 128
+[+] KEY: aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  21 20 7a 4b c5 cd 0e 30 18 67 a7 70 ce 83 87 e1  ! zK...0.g.p....
+[+] IV: 21 20 7a 4b c5 cd 0e 30 18 67 a7 70 ce 83 87 e1
+[+] After Encrypt: WlvagiBQvMxz18mAj0C/wzydEbGWvSRsqujvEOoIiMUXvWwImqnl65WDKkWLnGxkzcY+Zcm4ttGewWIEcIASZXmRtBEsYfbFoU05yz5dqNs=
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+	ACCURATE Backtrace:
+	0x102f2b888 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseDecrypt:key:cbcFlag:pos:]
+	0x102f2c29c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils decryptWithCBC:key:]
+	0x102f187d8 xianshen!0x247d8 (0x1000247d8)
+	0x1043915c4 FLEX4Framework!0x5d5c4 (0x5d5c4)
+	0x22180f688 CFNetwork!__75-[__NSURLSessionLocal taskForClass:request:uploadFile:bodyData:completion:]_block_invoke
+	0x221823220 CFNetwork!__49-[__NSCFLocalSessionTask _task_onqueue_didFinish]_block_invoke
+	0x221c9fcf4 Foundation!__NSBLOCKOPERATION_IS_CALLING_OUT_TO_A_BLOCK__
+	0x221babdc0 Foundation!-[NSBlockOperation main]
+	0x221bab2a8 Foundation!-[__NSOperationInternal _start:]
+	0x221ca1a78 Foundation!__NSOQSchedule_f
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c1e01c libdispatch.dylib!_dispatch_continuation_pop$VARIANT$mp
+	0x220c1d6e0 libdispatch.dylib!_dispatch_async_redirect_invoke
+	0x220c2a030 libdispatch.dylib!_dispatch_root_queue_drain
+	0x220c2a8d4 libdispatch.dylib!_dispatch_worker_thread2
+[+] CCAlgorithm: 0x0 --> AES Decrypt
+[+] CCOptions: 0x1 --> mode CBC
+[+] Before Decrypt: 数据过大，忽略
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef  .. ..v%..*......
+[+] KEY Length --> 128
+[+] KEY: aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  ed 05 7a c3 d3 fc 96 7d d2 76 4b 1c 04 1d 55 55  ..z....}.vK...UU
+[+] IV: ed 05 7a c3 d3 fc 96 7d d2 76 4b 1c 04 1d 55 55
+[+] After Decrypt: {"cmd_version":3,"client_ip":"125.70.77.49","heartbeat_sec":8,"result":false,"cmd_info":null}
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+	ACCURATE Backtrace:
+	0x102f2b8ec /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseDecrypt:key:cbcFlag:pos:]
+	0x102f2c208 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils decrypt:key:]
+	0x102f2c7e4 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils decryptFile:sourceFile:destFile:]
+	0x102f13bac /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RNAESUtils rnDecryptFile:sourceFilePath:destFilePath:resolver:rejecter:]
+	0x221242010 CoreFoundation!__invoking___
+	0x221123be0 CoreFoundation!-[NSInvocation invoke]
+	0x221124814 CoreFoundation!-[NSInvocation invokeWithTarget:]
+	0x1030b00a8 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RCTModuleMethod invokeWithBridge:module:arguments:]
+	0x1030b26ac xianshen!0x1be6ac (0x1001be6ac)
+	0x1030b22dc xianshen!0x1be2dc (0x1001be2dc)
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c22324 libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$mp
+	0x220c22e40 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$mp
+	0x220c2b4ac libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x220e5a114 libsystem_pthread.dylib!_pthread_wqthread
+[+] CCAlgorithm: 0x0 --> AES Decrypt
+[+] CCOptions: 0x3 --> mode ECB
+[+] Before Decrypt: 数据过大，忽略
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  d5 5e 96 5b d7 cc 07 63 00 3c e5 4e 0f 60 d1 7f  .^.[...c.<.N.`..
+[+] KEY Length --> 128
+[+] KEY: d5 5e 96 5b d7 cc 07 63 00 3c e5 4e 0f 60 d1 7f
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+	ACCURATE Backtrace:
+	0x102f2b8ec /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseDecrypt:key:cbcFlag:pos:]
+	0x102f2c208 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils decrypt:key:]
+	0x102f2c7e4 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils decryptFile:sourceFile:destFile:]
+	0x102f13bac /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RNAESUtils rnDecryptFile:sourceFilePath:destFilePath:resolver:rejecter:]
+	0x221242010 CoreFoundation!__invoking___
+	0x221123be0 CoreFoundation!-[NSInvocation invoke]
+	0x221124814 CoreFoundation!-[NSInvocation invokeWithTarget:]
+	0x1030b00a8 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RCTModuleMethod invokeWithBridge:module:arguments:]
+	0x1030b26ac xianshen!0x1be6ac (0x1001be6ac)
+	0x1030b22dc xianshen!0x1be2dc (0x1001be2dc)
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c22324 libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$mp
+	0x220c22e40 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$mp
+	0x220c2b4ac libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x220e5a114 libsystem_pthread.dylib!_pthread_wqthread
+[+] CCAlgorithm: 0x0 --> AES Decrypt
+[+] CCOptions: 0x3 --> mode ECB
+[+] Before Decrypt: 数据过大，忽略
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  d5 5e 96 5b d7 cc 07 63 00 3c e5 4e 0f 60 d1 7f  .^.[...c.<.N.`..
+[+] KEY Length --> 128
+[+] KEY: d5 5e 96 5b d7 cc 07 63 00 3c e5 4e 0f 60 d1 7f
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+	ACCURATE Backtrace:
+	0x102f2b8ec /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseDecrypt:key:cbcFlag:pos:]
+	0x102f2c208 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils decrypt:key:]
+	0x102f2c7e4 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils decryptFile:sourceFile:destFile:]
+	0x102f13bac /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RNAESUtils rnDecryptFile:sourceFilePath:destFilePath:resolver:rejecter:]
+	0x221242010 CoreFoundation!__invoking___
+	0x221123be0 CoreFoundation!-[NSInvocation invoke]
+	0x221124814 CoreFoundation!-[NSInvocation invokeWithTarget:]
+	0x1030b00a8 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RCTModuleMethod invokeWithBridge:module:arguments:]
+	0x1030b26ac xianshen!0x1be6ac (0x1001be6ac)
+	0x1030b22dc xianshen!0x1be2dc (0x1001be2dc)
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c22324 libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$mp
+	0x220c22e40 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$mp
+	0x220c2b4ac libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x220e5a114 libsystem_pthread.dylib!_pthread_wqthread
+[+] CCAlgorithm: 0x0 --> AES Decrypt
+[+] CCOptions: 0x3 --> mode ECB
+[+] Before Decrypt: 数据过大，忽略
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  d5 5e 96 5b d7 cc 07 63 00 3c e5 4e 0f 60 d1 7f  .^.[...c.<.N.`..
+[+] KEY Length --> 128
+[+] KEY: d5 5e 96 5b d7 cc 07 63 00 3c e5 4e 0f 60 d1 7f
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+	ACCURATE Backtrace:
+	0x102f2b3ac /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseEncrypt:key:cbcFlag:pos:]
+	0x102f2be1c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils encryptWithCBC:key:]
+	0x102f1853c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[vGrowthConnectUtils sendvGrowthHttpPost:host:path:aesKey:json:callback:errorCallback:]
+	0x102efc818 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RNServiceConnect rnSendvGrowthHttpPost:host:path:aesKey:data:resolve:rejecter:]
+	0x221242010 CoreFoundation!__invoking___
+	0x221123be0 CoreFoundation!-[NSInvocation invoke]
+	0x221124814 CoreFoundation!-[NSInvocation invokeWithTarget:]
+	0x1030b00a8 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RCTModuleMethod invokeWithBridge:module:arguments:]
+	0x1030b26ac xianshen!0x1be6ac (0x1001be6ac)
+	0x1030b22dc xianshen!0x1be2dc (0x1001be2dc)
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c22324 libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$mp
+	0x220c22e40 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$mp
+	0x220c2b4ac libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x220e5a114 libsystem_pthread.dylib!_pthread_wqthread
+[+] CCAlgorithm: 0x0 --> AES Encrypt
+[+] CCOptions: 0x1 --> mode CBC
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  7b 22 63 6d 64 5f 76 65 72 73 69 6f 6e 22 3a 33  {"cmd_version":3
+00000010  2c 22 63 6c 69 65 6e 74 5f 64 69 64 22 3a 22 42  ,"client_did":"B
+00000020  62 63 30 63 74 61 37 6e 70 51 68 4e 78 5a 6c 4a  bc0cta7npQhNxZlJ
+00000030  37 4b 67 53 77 3d 3d 22 2c 22 61 70 70 5f 69 6e  7KgSw==","app_in
+00000040  66 6f 22 3a 22 39 31 78 6a 5f 69 4f 53 22 7d     fo":"91xj_iOS"}
+[+] Before Encrypt: {"cmd_version":3,"client_did":"Bbc0cta7npQhNxZlJ7KgSw==","app_info":"91xj_iOS"}
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef  .. ..v%..*......
+[+] KEY Length --> 128
+[+] KEY: aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  15 f8 7a 4f 38 7d c0 58 30 c8 b9 ad 41 d0 10 6c  ..zO8}.X0...A..l
+[+] IV: 15 f8 7a 4f 38 7d c0 58 30 c8 b9 ad 41 d0 10 6c
+[+] After Encrypt: q8s3U2f4WgOUNH1ybf47NN//x1FSDgz55vmYFdi1kojAJDp6zaxvV0qt9pBRLYKqgYnfbI7wdKIwkD8mM6LUmbVXdASirV81Audv/bwJ57M=
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+	ACCURATE Backtrace:
+	0x102f2b888 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseDecrypt:key:cbcFlag:pos:]
+	0x102f2c29c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils decryptWithCBC:key:]
+	0x102f187d8 xianshen!0x247d8 (0x1000247d8)
+	0x1043915c4 FLEX4Framework!0x5d5c4 (0x5d5c4)
+	0x22180f688 CFNetwork!__75-[__NSURLSessionLocal taskForClass:request:uploadFile:bodyData:completion:]_block_invoke
+	0x221823220 CFNetwork!__49-[__NSCFLocalSessionTask _task_onqueue_didFinish]_block_invoke
+	0x221c9fcf4 Foundation!__NSBLOCKOPERATION_IS_CALLING_OUT_TO_A_BLOCK__
+	0x221babdc0 Foundation!-[NSBlockOperation main]
+	0x221bab2a8 Foundation!-[__NSOperationInternal _start:]
+	0x221ca1a78 Foundation!__NSOQSchedule_f
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c1e01c libdispatch.dylib!_dispatch_continuation_pop$VARIANT$mp
+	0x220c1d6e0 libdispatch.dylib!_dispatch_async_redirect_invoke
+	0x220c2a030 libdispatch.dylib!_dispatch_root_queue_drain
+	0x220c2a8d4 libdispatch.dylib!_dispatch_worker_thread2
+[+] CCAlgorithm: 0x0 --> AES Decrypt
+[+] CCOptions: 0x1 --> mode CBC
+[+] Before Decrypt: 数据过大，忽略
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef  .. ..v%..*......
+[+] KEY Length --> 128
+[+] KEY: aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  ef 92 29 25 ce e2 a4 35 ed 7d 6d ea 42 6f 0a 00  ..)%...5.}m.Bo..
+[+] IV: ef 92 29 25 ce e2 a4 35 ed 7d 6d ea 42 6f 0a 00
+[+] After Decrypt: {"cmd_version":3,"client_ip":"125.70.77.49","heartbeat_sec":8,"result":false,"cmd_info":null}
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+	ACCURATE Backtrace:
+	0x102f2b3ac /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseEncrypt:key:cbcFlag:pos:]
+	0x102f2be1c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils encryptWithCBC:key:]
+	0x102f1853c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[vGrowthConnectUtils sendvGrowthHttpPost:host:path:aesKey:json:callback:errorCallback:]
+	0x102efc818 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RNServiceConnect rnSendvGrowthHttpPost:host:path:aesKey:data:resolve:rejecter:]
+	0x221242010 CoreFoundation!__invoking___
+	0x221123be0 CoreFoundation!-[NSInvocation invoke]
+	0x221124814 CoreFoundation!-[NSInvocation invokeWithTarget:]
+	0x1030b00a8 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RCTModuleMethod invokeWithBridge:module:arguments:]
+	0x1030b26ac xianshen!0x1be6ac (0x1001be6ac)
+	0x1030b22dc xianshen!0x1be2dc (0x1001be2dc)
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c22324 libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$mp
+	0x220c22e40 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$mp
+	0x220c2b4ac libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x220e5a114 libsystem_pthread.dylib!_pthread_wqthread
+[+] CCAlgorithm: 0x0 --> AES Encrypt
+[+] CCOptions: 0x1 --> mode CBC
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  7b 22 63 6d 64 5f 76 65 72 73 69 6f 6e 22 3a 33  {"cmd_version":3
+00000010  2c 22 63 6c 69 65 6e 74 5f 64 69 64 22 3a 22 42  ,"client_did":"B
+00000020  62 63 30 63 74 61 37 6e 70 51 68 4e 78 5a 6c 4a  bc0cta7npQhNxZlJ
+00000030  37 4b 67 53 77 3d 3d 22 2c 22 61 70 70 5f 69 6e  7KgSw==","app_in
+00000040  66 6f 22 3a 22 39 31 78 6a 5f 69 4f 53 22 7d     fo":"91xj_iOS"}
+[+] Before Encrypt: {"cmd_version":3,"client_did":"Bbc0cta7npQhNxZlJ7KgSw==","app_info":"91xj_iOS"}
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef  .. ..v%..*......
+[+] KEY Length --> 128
+[+] KEY: aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  6f b6 3f dc 04 f6 00 5e c7 da e4 ec 36 93 24 01  o.?....^....6.$.
+[+] IV: 6f b6 3f dc 04 f6 00 5e c7 da e4 ec 36 93 24 01
+[+] After Encrypt: 94SUtPj6GzhQfoeH4XRQ/9K74R3dwVB6AyaAV/n/ihf76vemaM3cFL+K3YJEnxXFz2fH8gHQLjL10SElpeb5lUmxYF/BRcZ7iJ6u2Apr+2E=
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+	ACCURATE Backtrace:
+	0x102f2b888 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseDecrypt:key:cbcFlag:pos:]
+	0x102f2c29c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils decryptWithCBC:key:]
+	0x102f187d8 xianshen!0x247d8 (0x1000247d8)
+	0x1043915c4 FLEX4Framework!0x5d5c4 (0x5d5c4)
+	0x22180f688 CFNetwork!__75-[__NSURLSessionLocal taskForClass:request:uploadFile:bodyData:completion:]_block_invoke
+	0x221823220 CFNetwork!__49-[__NSCFLocalSessionTask _task_onqueue_didFinish]_block_invoke
+	0x221c9fcf4 Foundation!__NSBLOCKOPERATION_IS_CALLING_OUT_TO_A_BLOCK__
+	0x221babdc0 Foundation!-[NSBlockOperation main]
+	0x221bab2a8 Foundation!-[__NSOperationInternal _start:]
+	0x221ca1a78 Foundation!__NSOQSchedule_f
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c1e01c libdispatch.dylib!_dispatch_continuation_pop$VARIANT$mp
+	0x220c1d6e0 libdispatch.dylib!_dispatch_async_redirect_invoke
+	0x220c2a030 libdispatch.dylib!_dispatch_root_queue_drain
+	0x220c2a8d4 libdispatch.dylib!_dispatch_worker_thread2
+[+] CCAlgorithm: 0x0 --> AES Decrypt
+[+] CCOptions: 0x1 --> mode CBC
+[+] Before Decrypt: 数据过大，忽略
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef  .. ..v%..*......
+[+] KEY Length --> 128
+[+] KEY: aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  f9 48 da 01 5a c5 d7 61 ae 04 da d2 60 82 e8 db  .H..Z..a....`...
+[+] IV: f9 48 da 01 5a c5 d7 61 ae 04 da d2 60 82 e8 db
+[+] After Decrypt: {"cmd_version":3,"client_ip":"125.70.77.49","heartbeat_sec":8,"result":false,"cmd_info":null}
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+	ACCURATE Backtrace:
+	0x102f2b3ac /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseEncrypt:key:cbcFlag:pos:]
+	0x102f2be1c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils encryptWithCBC:key:]
+	0x102f1853c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[vGrowthConnectUtils sendvGrowthHttpPost:host:path:aesKey:json:callback:errorCallback:]
+	0x102efc818 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RNServiceConnect rnSendvGrowthHttpPost:host:path:aesKey:data:resolve:rejecter:]
+	0x221242010 CoreFoundation!__invoking___
+	0x221123be0 CoreFoundation!-[NSInvocation invoke]
+	0x221124814 CoreFoundation!-[NSInvocation invokeWithTarget:]
+	0x1030b00a8 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RCTModuleMethod invokeWithBridge:module:arguments:]
+	0x1030b26ac xianshen!0x1be6ac (0x1001be6ac)
+	0x1030b22dc xianshen!0x1be2dc (0x1001be2dc)
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c22324 libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$mp
+	0x220c22e40 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$mp
+	0x220c2b4ac libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x220e5a114 libsystem_pthread.dylib!_pthread_wqthread
+[+] CCAlgorithm: 0x0 --> AES Encrypt
+[+] CCOptions: 0x1 --> mode CBC
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  7b 22 63 6d 64 5f 76 65 72 73 69 6f 6e 22 3a 33  {"cmd_version":3
+00000010  2c 22 63 6c 69 65 6e 74 5f 64 69 64 22 3a 22 42  ,"client_did":"B
+00000020  62 63 30 63 74 61 37 6e 70 51 68 4e 78 5a 6c 4a  bc0cta7npQhNxZlJ
+00000030  37 4b 67 53 77 3d 3d 22 2c 22 61 70 70 5f 69 6e  7KgSw==","app_in
+00000040  66 6f 22 3a 22 39 31 78 6a 5f 69 4f 53 22 7d     fo":"91xj_iOS"}
+[+] Before Encrypt: {"cmd_version":3,"client_did":"Bbc0cta7npQhNxZlJ7KgSw==","app_info":"91xj_iOS"}
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef  .. ..v%..*......
+[+] KEY Length --> 128
+[+] KEY: aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  d8 83 34 6a 9d 0e 7a f5 19 cf 32 aa 04 33 f6 40  ..4j..z...2..3.@
+[+] IV: d8 83 34 6a 9d 0e 7a f5 19 cf 32 aa 04 33 f6 40
+[+] After Encrypt: ZykIjUCZ+vxGUhaVEum1jNJK/rNB7VYrR/QWUyWJU12XtgJ+8+zeExS6ZvnxtJLGI+ATCYN7NrQd1B+YdUXgUe1EeTnv2sOJIZzzJGGrWc0=
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+	ACCURATE Backtrace:
+	0x102f2b888 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseDecrypt:key:cbcFlag:pos:]
+	0x102f2c29c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils decryptWithCBC:key:]
+	0x102f187d8 xianshen!0x247d8 (0x1000247d8)
+	0x1043915c4 FLEX4Framework!0x5d5c4 (0x5d5c4)
+	0x22180f688 CFNetwork!__75-[__NSURLSessionLocal taskForClass:request:uploadFile:bodyData:completion:]_block_invoke
+	0x221823220 CFNetwork!__49-[__NSCFLocalSessionTask _task_onqueue_didFinish]_block_invoke
+	0x221c9fcf4 Foundation!__NSBLOCKOPERATION_IS_CALLING_OUT_TO_A_BLOCK__
+	0x221babdc0 Foundation!-[NSBlockOperation main]
+	0x221bab2a8 Foundation!-[__NSOperationInternal _start:]
+	0x221ca1a78 Foundation!__NSOQSchedule_f
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c1e01c libdispatch.dylib!_dispatch_continuation_pop$VARIANT$mp
+	0x220c1d6e0 libdispatch.dylib!_dispatch_async_redirect_invoke
+	0x220c2a030 libdispatch.dylib!_dispatch_root_queue_drain
+	0x220c2a8d4 libdispatch.dylib!_dispatch_worker_thread2
+[+] CCAlgorithm: 0x0 --> AES Decrypt
+[+] CCOptions: 0x1 --> mode CBC
+[+] Before Decrypt: 数据过大，忽略
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef  .. ..v%..*......
+[+] KEY Length --> 128
+[+] KEY: aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  8b f6 5e ea 0b 90 62 4a af 37 ad 17 de cf 4a 5b  ..^...bJ.7....J[
+[+] IV: 8b f6 5e ea 0b 90 62 4a af 37 ad 17 de cf 4a 5b
+[+] After Decrypt: {"cmd_version":3,"client_ip":"125.70.77.49","heartbeat_sec":8,"result":false,"cmd_info":null}
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+	ACCURATE Backtrace:
+	0x102f2b3ac /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseEncrypt:key:cbcFlag:pos:]
+	0x102f2be1c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils encryptWithCBC:key:]
+	0x102f1853c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[vGrowthConnectUtils sendvGrowthHttpPost:host:path:aesKey:json:callback:errorCallback:]
+	0x102efc818 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RNServiceConnect rnSendvGrowthHttpPost:host:path:aesKey:data:resolve:rejecter:]
+	0x221242010 CoreFoundation!__invoking___
+	0x221123be0 CoreFoundation!-[NSInvocation invoke]
+	0x221124814 CoreFoundation!-[NSInvocation invokeWithTarget:]
+	0x1030b00a8 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RCTModuleMethod invokeWithBridge:module:arguments:]
+	0x1030b26ac xianshen!0x1be6ac (0x1001be6ac)
+	0x1030b22dc xianshen!0x1be2dc (0x1001be2dc)
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c22324 libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$mp
+	0x220c22e40 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$mp
+	0x220c2b4ac libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x220e5a114 libsystem_pthread.dylib!_pthread_wqthread
+[+] CCAlgorithm: 0x0 --> AES Encrypt
+[+] CCOptions: 0x1 --> mode CBC
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  7b 22 63 6d 64 5f 76 65 72 73 69 6f 6e 22 3a 33  {"cmd_version":3
+00000010  2c 22 63 6c 69 65 6e 74 5f 64 69 64 22 3a 22 42  ,"client_did":"B
+00000020  62 63 30 63 74 61 37 6e 70 51 68 4e 78 5a 6c 4a  bc0cta7npQhNxZlJ
+00000030  37 4b 67 53 77 3d 3d 22 2c 22 61 70 70 5f 69 6e  7KgSw==","app_in
+00000040  66 6f 22 3a 22 39 31 78 6a 5f 69 4f 53 22 7d     fo":"91xj_iOS"}
+[+] Before Encrypt: {"cmd_version":3,"client_did":"Bbc0cta7npQhNxZlJ7KgSw==","app_info":"91xj_iOS"}
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef  .. ..v%..*......
+[+] KEY Length --> 128
+[+] KEY: aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  b2 b3 9b d3 1c 06 8b dc 84 5b b3 80 21 47 1e 9f  .........[..!G..
+[+] IV: b2 b3 9b d3 1c 06 8b dc 84 5b b3 80 21 47 1e 9f
+[+] After Encrypt: zakD1hIqGPPh5GlfaSPek/9ShO1erDC94DDiB8d5ouIFntS4LZ8ftU2RoSbQx4zJegkmgo8k19NembsgwQdHDvQ65IT9MZT6oimVUDcnXl0=
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+	ACCURATE Backtrace:
+	0x102f2b888 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseDecrypt:key:cbcFlag:pos:]
+	0x102f2c29c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils decryptWithCBC:key:]
+	0x102f187d8 xianshen!0x247d8 (0x1000247d8)
+	0x1043915c4 FLEX4Framework!0x5d5c4 (0x5d5c4)
+	0x22180f688 CFNetwork!__75-[__NSURLSessionLocal taskForClass:request:uploadFile:bodyData:completion:]_block_invoke
+	0x221823220 CFNetwork!__49-[__NSCFLocalSessionTask _task_onqueue_didFinish]_block_invoke
+	0x221c9fcf4 Foundation!__NSBLOCKOPERATION_IS_CALLING_OUT_TO_A_BLOCK__
+	0x221babdc0 Foundation!-[NSBlockOperation main]
+	0x221bab2a8 Foundation!-[__NSOperationInternal _start:]
+	0x221ca1a78 Foundation!__NSOQSchedule_f
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c1e01c libdispatch.dylib!_dispatch_continuation_pop$VARIANT$mp
+	0x220c1d6e0 libdispatch.dylib!_dispatch_async_redirect_invoke
+	0x220c2a030 libdispatch.dylib!_dispatch_root_queue_drain
+	0x220c2a8d4 libdispatch.dylib!_dispatch_worker_thread2
+[+] CCAlgorithm: 0x0 --> AES Decrypt
+[+] CCOptions: 0x1 --> mode CBC
+[+] Before Decrypt: 数据过大，忽略
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef  .. ..v%..*......
+[+] KEY Length --> 128
+[+] KEY: aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  d3 3a 0b ac af 0c e2 99 1a fe 0f 30 c6 48 93 ba  .:.........0.H..
+[+] IV: d3 3a 0b ac af 0c e2 99 1a fe 0f 30 c6 48 93 ba
+[+] After Decrypt: {"cmd_version":3,"client_ip":"125.70.77.49","heartbeat_sec":8,"result":false,"cmd_info":null}
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+[iPhone::好色先生TV ]->
+[iPhone::好色先生TV ]-> 	ACCURATE Backtrace:
+	0x102f2b3ac /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseEncrypt:key:cbcFlag:pos:]
+	0x102f2be1c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils encryptWithCBC:key:]
+	0x102f1853c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[vGrowthConnectUtils sendvGrowthHttpPost:host:path:aesKey:json:callback:errorCallback:]
+	0x102efc818 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RNServiceConnect rnSendvGrowthHttpPost:host:path:aesKey:data:resolve:rejecter:]
+        0x221242010 CoreFoundation!__invoking___
+	0x221123be0 CoreFoundation!-[NSInvocation invoke]
+	0x221124814 CoreFoundation!-[NSInvocation invokeWithTarget:]
+	0x1030b00a8 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RCTModuleMethod invokeWithBridge:module:arguments:]
+	0x1030b26ac xianshen!0x1be6ac (0x1001be6ac)
+	0x1030b22dc xianshen!0x1be2dc (0x1001be2dc)
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c22324 libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$mp
+	0x220c22e40 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$mp
+	0x220c2b4ac libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x220e5a114 libsystem_pthread.dylib!_pthread_wqthread
+[+] CCAlgorithm: 0x0 --> AES Encrypt
+[+] CCOptions: 0x1 --> mode CBC
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  7b 22 63 6d 64 5f 76 65 72 73 69 6f 6e 22 3a 33  {"cmd_version":3
+00000010  2c 22 63 6c 69 65 6e 74 5f 64 69 64 22 3a 22 42  ,"client_did":"B
+00000020  62 63 30 63 74 61 37 6e 70 51 68 4e 78 5a 6c 4a  bc0cta7npQhNxZlJ
+00000030  37 4b 67 53 77 3d 3d 22 2c 22 61 70 70 5f 69 6e  7KgSw==","app_in
+00000040  66 6f 22 3a 22 39 31 78 6a 5f 69 4f 53 22 7d     fo":"91xj_iOS"}
+[+] Before Encrypt: {"cmd_version":3,"client_did":"Bbc0cta7npQhNxZlJ7KgSw==","app_info":"91xj_iOS"}
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef  .. ..v%..*......
+[+] KEY Length --> 128
+[+] KEY: aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  61 5f d4 1a 91 1f 43 db 99 30 12 c5 4d 6f 97 98  a_....C..0..Mo..
+[+] IV: 61 5f d4 1a 91 1f 43 db 99 30 12 c5 4d 6f 97 98
+[+] After Encrypt: OKtXyZHF1nYanLE+J6jq1no2vP3AZf7nEjZfY2w4Ntmi9QnXKk3u6Bgur6QP25sL8KExXhujLuyYF9a1Mutem4NsMZYlFSxPGrNGFr8n9WU=
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+[iPhone::好色先生TV ]->
+[iPhone::好色先生TV ]-> 	ACCURATE Backtrace:
+	0x102f2b888 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseDecrypt:key:cbcFlag:pos:]
+	0x102f2c29c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils decryptWithCBC:key:]
+	0x102f187d8 xianshen!0x247d8 (0x1000247d8)
+	0x1043915c4 FLEX4Framework!0x5d5c4 (0x5d5c4)
+	0x22180f688 CFNetwork!__75-[__NSURLSessionLocal taskForClass:request:uploadFile:bodyData:completion:]_block_invoke
+	0x221823220 CFNetwork!__49-[__NSCFLocalSessionTask _task_onqueue_didFinish]_block_invoke
+        0x221c9fcf4 Foundation!__NSBLOCKOPERATION_IS_CALLING_OUT_TO_A_BLOCK__
+	0x221babdc0 Foundation!-[NSBlockOperation main]
+	0x221bab2a8 Foundation!-[__NSOperationInternal _start:]
+	0x221ca1a78 Foundation!__NSOQSchedule_f
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c1e01c libdispatch.dylib!_dispatch_continuation_pop$VARIANT$mp
+	0x220c1d6e0 libdispatch.dylib!_dispatch_async_redirect_invoke
+	0x220c2a030 libdispatch.dylib!_dispatch_root_queue_drain
+	0x220c2a8d4 libdispatch.dylib!_dispatch_worker_thread2
+[+] CCAlgorithm: 0x0 --> AES Decrypt
+[+] CCOptions: 0x1 --> mode CBC
+[+] Before Decrypt: 数据过大，忽略
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef  .. ..v%..*......
+[+] KEY Length --> 128
+[+] KEY: aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  16 68 47 c5 d2 82 e2 03 b5 f1 c8 8f 9d 9f fb 08  .hG.............
+[+] IV: 16 68 47 c5 d2 82 e2 03 b5 f1 c8 8f 9d 9f fb 08
+[+] After Decrypt: {"cmd_version":3,"client_ip":"125.70.77.49","heartbeat_sec":8,"result":false,"cmd_info":null}
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+	ACCURATE Backtrace:
+	0x102f2b3ac /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseEncrypt:key:cbcFlag:pos:]
+	0x102f2be1c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils encryptWithCBC:key:]
+	0x102f3af4c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+	0x102efc3b8 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RNServiceConnect rnSendPostRequest:authorization:data:resolve:rejecter:]
+	0x221242010 CoreFoundation!__invoking___
+	0x221123be0 CoreFoundation!-[NSInvocation invoke]
+	0x221124814 CoreFoundation!-[NSInvocation invokeWithTarget:]
+	0x1030b00a8 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RCTModuleMethod invokeWithBridge:module:arguments:]
+	0x1030b26ac xianshen!0x1be6ac (0x1001be6ac)
+	0x1030b22dc xianshen!0x1be2dc (0x1001be2dc)
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c22324 libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$mp
+	0x220c22e40 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$mp
+	0x220c2b4ac libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x220e5a114 libsystem_pthread.dylib!_pthread_wqthread
+[+] CCAlgorithm: 0x0 --> AES Encrypt
+[+] CCOptions: 0x1 --> mode CBC
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  7b 22 75 73 65 72 69 64 22 3a 22 34 79 62 38 31  {"userid":"4yb81
+00000010  64 22 2c 22 72 65 73 5f 74 69 64 22 3a 31 2c 22  d","res_tid":1,"
+00000020  72 65 73 5f 6b 65 79 22 3a 22 66 34 61 33 72 67  res_key":"f4a3rg
+00000030  64 77 30 63 62 37 22 2c 22 74 6f 74 61 6c 5f 76  dw0cb7","total_v
+00000040  69 65 77 5f 70 72 6f 63 65 73 73 22 3a 37 32 30  iew_process":720
+00000050  7d                                               }
+[+] Before Encrypt: {"userid":"4yb81d","res_tid":1,"res_key":"f4a3rgdw0cb7","total_view_process":720}
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  5e b6 cc da 71 96 4d c0 8a 4c 4c ee e5 a1 e0 3f  ^...q.M..LL....?
+[+] KEY Length --> 128
+[+] KEY: 5e b6 cc da 71 96 4d c0 8a 4c 4c ee e5 a1 e0 3f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  ed 14 4a 7e 72 28 0b 8e 47 1c 86 4b fe 01 e4 e5  ..J~r(..G..K....
+[+] IV: ed 14 4a 7e 72 28 0b 8e 47 1c 86 4b fe 01 e4 e5
+[+] After Encrypt: JgbjiOw2Vg13NFeEkRAj51GfVNIFojp6M0KDGGuVYQeQsA8vMGAnM+i5uYYz8EMx1BBFL1l8Zy0LLcxPQI9YH5MW7J2aVtb6/D5k0LyAdEjhrf+qsjhlKb2SAO1PsXzd
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+	ACCURATE Backtrace:
+	0x102f2b3ac /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseEncrypt:key:cbcFlag:pos:]
+	0x102f2be1c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils encryptWithCBC:key:]
+	0x102f3af4c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+	0x102efc114 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+	0x221242010 CoreFoundation!__invoking___
+	0x221123be0 CoreFoundation!-[NSInvocation invoke]
+	0x221124814 CoreFoundation!-[NSInvocation invokeWithTarget:]
+	0x1030b00a8 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RCTModuleMethod invokeWithBridge:module:arguments:]
+	0x1030b26ac xianshen!0x1be6ac (0x1001be6ac)
+	0x1030b22dc xianshen!0x1be2dc (0x1001be2dc)
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c22324 libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$mp
+	0x220c22e40 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$mp
+	0x220c2b4ac libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x220e5a114 libsystem_pthread.dylib!_pthread_wqthread
+[+] CCAlgorithm: 0x0 --> AES Encrypt
+[+] CCOptions: 0x1 --> mode CBC
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  7b 22 75 73 65 72 69 64 22 3a 22 34 79 62 38 31  {"userid":"4yb81
+00000010  64 22 2c 22 72 65 73 5f 6b 65 79 22 3a 22 66 34  d","res_key":"f4
+00000020  61 33 72 67 64 77 30 63 62 37 22 7d              a3rgdw0cb7"}
+[+] Before Encrypt: {"userid":"4yb81d","res_key":"f4a3rgdw0cb7"}
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  5e b6 cc da 71 96 4d c0 8a 4c 4c ee e5 a1 e0 3f  ^...q.M..LL....?
+[+] KEY Length --> 128
+[+] KEY: 5e b6 cc da 71 96 4d c0 8a 4c 4c ee e5 a1 e0 3f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  c5 a5 5c ca f9 da 9c 5c 44 e6 63 b0 fb 44 16 42  ..\....\D.c..D.B
+[+] IV: c5 a5 5c ca f9 da 9c 5c 44 e6 63 b0 fb 44 16 42
+[+] After Encrypt: DBCoGqZvpfSAML+Wf77cZLjq8arK8LYOLjt52dH749UuBtkKfVepuVeCAaOWQXV/
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+	ACCURATE Backtrace:
+	0x102f2b888 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseDecrypt:key:cbcFlag:pos:]
+	0x102f2c29c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils decryptWithCBC:key:]
+	0x102f3b53c xianshen!0x4753c (0x10004753c)
+	0x1043915c4 FLEX4Framework!0x5d5c4 (0x5d5c4)
+	0x22180f688 CFNetwork!__75-[__NSURLSessionLocal taskForClass:request:uploadFile:bodyData:completion:]_block_invoke
+	0x221823220 CFNetwork!__49-[__NSCFLocalSessionTask _task_onqueue_didFinish]_block_invoke
+	0x221c9fcf4 Foundation!__NSBLOCKOPERATION_IS_CALLING_OUT_TO_A_BLOCK__
+	0x221babdc0 Foundation!-[NSBlockOperation main]
+	0x221bab2a8 Foundation!-[__NSOperationInternal _start:]
+	0x221ca1a78 Foundation!__NSOQSchedule_f
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c1e01c libdispatch.dylib!_dispatch_continuation_pop$VARIANT$mp
+	0x220c1d79c libdispatch.dylib!_dispatch_async_redirect_invoke
+	0x220c2a030 libdispatch.dylib!_dispatch_root_queue_drain
+	0x220c2a8d4 libdispatch.dylib!_dispatch_worker_thread2
+[+] CCAlgorithm: 0x0 --> AES Decrypt
+[+] CCOptions: 0x1 --> mode CBC
+[+] Before Decrypt: 数据过大，忽略
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  5e b6 cc da 71 96 4d c0 8a 4c 4c ee e5 a1 e0 3f  ^...q.M..LL....?
+[+] KEY Length --> 128
+[+] KEY: 5e b6 cc da 71 96 4d c0 8a 4c 4c ee e5 a1 e0 3f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  55 5a ba 25 f1 d4 bc cd b9 30 82 16 fb 84 f2 fb  UZ.%.....0......
+[+] IV: 55 5a ba 25 f1 d4 bc cd b9 30 82 16 fb 84 f2 fb
+[+] After Decrypt: {"code":0,"msg":"success"}
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+	ACCURATE Backtrace:
+	0x102f2b888 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseDecrypt:key:cbcFlag:pos:]
+	0x102f2c29c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils decryptWithCBC:key:]
+	0x102f3b53c xianshen!0x4753c (0x10004753c)
+	0x1043915c4 FLEX4Framework!0x5d5c4 (0x5d5c4)
+	0x22180f688 CFNetwork!__75-[__NSURLSessionLocal taskForClass:request:uploadFile:bodyData:completion:]_block_invoke
+	0x221823220 CFNetwork!__49-[__NSCFLocalSessionTask _task_onqueue_didFinish]_block_invoke
+	0x221c9fcf4 Foundation!__NSBLOCKOPERATION_IS_CALLING_OUT_TO_A_BLOCK__
+	0x221babdc0 Foundation!-[NSBlockOperation main]
+	0x221bab2a8 Foundation!-[__NSOperationInternal _start:]
+	0x221ca1a78 Foundation!__NSOQSchedule_f
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c1e01c libdispatch.dylib!_dispatch_continuation_pop$VARIANT$mp
+	0x220c1d6e0 libdispatch.dylib!_dispatch_async_redirect_invoke
+	0x220c2a030 libdispatch.dylib!_dispatch_root_queue_drain
+	0x220c2a8d4 libdispatch.dylib!_dispatch_worker_thread2
+[+] CCAlgorithm: 0x0 --> AES Decrypt
+[+] CCOptions: 0x1 --> mode CBC
+[+] Before Decrypt: 数据过大，忽略
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  5e b6 cc da 71 96 4d c0 8a 4c 4c ee e5 a1 e0 3f  ^...q.M..LL....?
+[+] KEY Length --> 128
+[+] KEY: 5e b6 cc da 71 96 4d c0 8a 4c 4c ee e5 a1 e0 3f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  65 47 6f 52 d6 f7 2e 49 5c 8e 89 ef df 29 ef 99  eGoR...I\....)..
+[+] IV: 65 47 6f 52 d6 f7 2e 49 5c 8e 89 ef df 29 ef 99
+[+] After Decrypt: {"code":0,"data":[{"clarity_id":"3","clarity_id_text":"高清","video_uri":"https://w1.zikl.xyz/cos/txvideo-new/scraper/aaa/ts/12f250a06eddbaadce716338202933ac.m3u8","filesize":162563036}],"msg":"success"}
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+	ACCURATE Backtrace:
+	0x102f2b3ac /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseEncrypt:key:cbcFlag:pos:]
+	0x102f2be1c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils encryptWithCBC:key:]
+	0x102f1853c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[vGrowthConnectUtils sendvGrowthHttpPost:host:path:aesKey:json:callback:errorCallback:]
+	0x102efc818 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RNServiceConnect rnSendvGrowthHttpPost:host:path:aesKey:data:resolve:rejecter:]
+	0x221242010 CoreFoundation!__invoking___
+	0x221123be0 CoreFoundation!-[NSInvocation invoke]
+	0x221124814 CoreFoundation!-[NSInvocation invokeWithTarget:]
+	0x1030b00a8 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[RCTModuleMethod invokeWithBridge:module:arguments:]
+	0x1030b26ac xianshen!0x1be6ac (0x1001be6ac)
+	0x1030b22dc xianshen!0x1be2dc (0x1001be2dc)
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c22324 libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$mp
+	0x220c22e40 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$mp
+	0x220c2b4ac libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x220e5a114 libsystem_pthread.dylib!_pthread_wqthread
+[+] CCAlgorithm: 0x0 --> AES Encrypt
+[+] CCOptions: 0x1 --> mode CBC
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  7b 22 63 6d 64 5f 76 65 72 73 69 6f 6e 22 3a 33  {"cmd_version":3
+00000010  2c 22 63 6c 69 65 6e 74 5f 64 69 64 22 3a 22 42  ,"client_did":"B
+00000020  62 63 30 63 74 61 37 6e 70 51 68 4e 78 5a 6c 4a  bc0cta7npQhNxZlJ
+00000030  37 4b 67 53 77 3d 3d 22 2c 22 61 70 70 5f 69 6e  7KgSw==","app_in
+00000040  66 6f 22 3a 22 39 31 78 6a 5f 69 4f 53 22 7d     fo":"91xj_iOS"}
+[+] Before Encrypt: {"cmd_version":3,"client_did":"Bbc0cta7npQhNxZlJ7KgSw==","app_info":"91xj_iOS"}
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef  .. ..v%..*......
+[+] KEY Length --> 128
+[+] KEY: aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  28 16 fb eb 7b 95 f3 bd 96 15 f5 1d 3e e7 97 eb  (...{.......>...
+[+] IV: 28 16 fb eb 7b 95 f3 bd 96 15 f5 1d 3e e7 97 eb
+[+] After Encrypt: 79CJr1gnYOGWuJurKP1901PHFej+e7OqaDRApKc7mWI279OceFfGyq3RcC2LKCC2U5gUpdXcd0YvSaT+fJ7DAR5Njb9IjBIDmHE2JofgtZo=
+[-] --------------------------------------------------------------
+
+[+] --------------------------------------------------------------
+	ACCURATE Backtrace:
+	0x102f2b888 /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!-[AESUtils baseDecrypt:key:cbcFlag:pos:]
+	0x102f2c29c /var/containers/Bundle/Application/98A9FC90-CA0A-4E80-A36C-3521C1A2B265/xianshen.app/xianshen!+[AESUtils decryptWithCBC:key:]
+	0x102f187d8 xianshen!0x247d8 (0x1000247d8)
+	0x1043915c4 FLEX4Framework!0x5d5c4 (0x5d5c4)
+	0x22180f688 CFNetwork!__75-[__NSURLSessionLocal taskForClass:request:uploadFile:bodyData:completion:]_block_invoke
+	0x221823220 CFNetwork!__49-[__NSCFLocalSessionTask _task_onqueue_didFinish]_block_invoke
+	0x221c9fcf4 Foundation!__NSBLOCKOPERATION_IS_CALLING_OUT_TO_A_BLOCK__
+	0x221babdc0 Foundation!-[NSBlockOperation main]
+	0x221bab2a8 Foundation!-[__NSOperationInternal _start:]
+	0x221ca1a78 Foundation!__NSOQSchedule_f
+	0x220c78a38 libdispatch.dylib!_dispatch_call_block_and_release
+	0x220c797d4 libdispatch.dylib!_dispatch_client_callout
+	0x220c1e01c libdispatch.dylib!_dispatch_continuation_pop$VARIANT$mp
+	0x220c1d6e0 libdispatch.dylib!_dispatch_async_redirect_invoke
+	0x220c2a030 libdispatch.dylib!_dispatch_root_queue_drain
+	0x220c2a8d4 libdispatch.dylib!_dispatch_worker_thread2
+[+] CCAlgorithm: 0x0 --> AES Decrypt
+[+] CCOptions: 0x1 --> mode CBC
+[+] Before Decrypt: 数据过大，忽略
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef  .. ..v%..*......
+[+] KEY Length --> 128
+[+] KEY: aa ad 20 e8 9a 76 25 f3 87 2a fe fc ab ae 0c ef
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  00 8a ae 18 c3 cd 8c 3e 16 82 a1 52 8a 5c 79 72  .......>...R.\yr
+[+] IV: 00 8a ae 18 c3 cd 8c 3e 16 82 a1 52 8a 5c 79 72
+[+] After Decrypt: {"cmd_version":3,"client_ip":"125.70.77.49","heartbeat_sec":8,"result":false,"cmd_info":null}
+[-] --------------------------------------------------------------
+

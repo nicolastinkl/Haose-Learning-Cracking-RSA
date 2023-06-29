@@ -1,0 +1,387 @@
+     ____
+    / _  |   Frida 16.0.11 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to iPhone (id=4a39ccef9af42fd04b0029d24873a0d2834c0fee)
+Tracing - Name: -[M3U8Parser setM3u8NetAddress:] address: 0x100424c84
+Tracing - Name: -[M3U8Parser setKey:] address: 0x100424d0c
+Tracing - Name: +[DADownloadUrlResolver analysisDownloadUrls:localUrl:downloadName:aesKey:finishBlock:] address: 0x10045ad80
+Tracing - Name: +[DADownloadUrlResolver isExistPath:] address: 0x10045cacc
+Tracing - Name: +[DADownloadUrlResolver analysisURL:localUrl:downloadName:aesKey:finishBlock:] address: 0x10045b894
+Tracing - Name: +[DADownloadUrlResolver analysisM3U8File:downloadName:localUrl:aesKey:andFinish:] address: 0x10045bb1c
+Tracing - Name: +[DADownloadUrlResolver analysisHTMLFile:localUrl:downloadName:finishBlock:] address: 0x10045c008
+Tracing - Name: +[DADownloadUrlResolver writeFileToLocalFileUrl:downloadName:contentStr:aesKey:] address: 0x10045c8d8
+Tracing - Name: +[DADownloadUrlResolver parseHtmlArray:returnStr:rootPath:attrName:andNameList:andArrayList:] address: 0x10045c458
+Tracing - Name: +[DADownloadUrlResolver getFileName:] address: 0x10045c86c
+Tracing - Name: -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:] address: 0x10040ff8c
+Tracing - Name: +[InitServerConnect initGetServerInfo] address: 0x1004492b8
+Tracing - Name: +[InitServerConnect initGetAppUrlInfo] address: 0x10044adcc
+Tracing - Name: +[InitServerConnect pingAddressTest:] address: 0x10044aa58
+Tracing - Name: +[InitServerConnect gettingServerInfo:uuid:] address: 0x10044a204
+Tracing - Name: +[InitServerConnect getServerAddrListByUrl:] address: 0x100449ed4
+Tracing - Name: -[IJKFFMoviePlayerController initWithContentURL:withOptions:] address: 0x10072dc44
+Tracing - Name: -[IJKFFMoviePlayerController initWithContentURLString:withOptions:] address: 0x10072dd7c
+Tracing - Name: +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:] address: 0x10044eca4
+Tracing - Name: +[ServerConnectUtils sendHttpPost:path:authorization:data:] address: 0x10044e43c
+Tracing - Name: +[ServerInfo getVideoAESKey] address: 0x10044c298
+Tracing - Name: +[AESUtils encryptString:key:] address: 0x10043fe54
+Tracing - Name: +[AESUtils encryptFile:sourceFile:destFile:] address: 0x100440838
+Tracing - Name: +[AESUtils encryptWithCBC:key:] address: 0x10043fdc0
+Tracing - Name: +[AESUtils encrypt:key:] address: 0x10043fd2c
+Tracing - Name: +[AESUtils encryptStringCbcIv:key:iv:withBase64:] address: 0x10043ffd0
+Tracing - Name: +[AESUtils decrypt:key:] address: 0x1004401ac
+Tracing - Name: +[AESUtils decryptString:key:] address: 0x1004402d4
+Tracing - Name: +[AESUtils decryptFile:sourceFile:destFile:] address: 0x100440768
+Tracing - Name: +[AESUtils decryptNoPadding:key:] address: 0x10043fb8c
+Tracing - Name: +[AESUtils decryptWithCBC:key:] address: 0x100440240
+Tracing - Name: +[AESUtils decryptStringCbcIv:key:iv:withBase64:] address: 0x100440498
+[iPhone::好色先生TV ]-> Tracing +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] ---------------------------------------------------------------
+*** entering +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] arg2 sendHttpPostAsync: https://g.pekingkeji.com
+[+] type: __NSCFString
+[+] arg3 path: {
+    m = p;
+    p = "/app/user/view/process/up";
+    s = growth;
+}
+[+] type: __NSDictionaryM
+[+] arg4 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg5 data: {"userid":"4yb81d","res_key":"xkzx2yacn5n","last_view_process":0}
+[+] type: __NSCFString
+[+] arg6 callback: <__NSStackBlock__: 0x16fff64f8>
+[+] type: __NSStackBlock__
+[+] arg7 errorCallback: <__NSStackBlock__: 0x16fff64d0>
+[+] type: __NSStackBlock__
+[+] 类 args[0]: ServerConnectUtils
+[+] type: ServerConnectUtils
+Tracing +[AESUtils encryptWithCBC:key:]
+[+] ---------------------------------------------------------------
+*** entering +[AESUtils encryptWithCBC:key:]
+[+] 参数为NSData 不显示
+[+] type: NSConcreteMutableData
+[+] arg3 key: XrbM2nGWTcCKTEzu5aHgPw==
+[+] type: __NSCFString
+[+] 类 args[0]: AESUtils
+[+] type: AESUtils
+[返回值]NSConcreteMutableData NSData 类型数据，不显示
+error: retval: 0x2811e7b70
+*** exited +[AESUtils encryptWithCBC:key:]
+[-] ---------------------------------------------------------------
+
+[返回值] __NSCFStringretval: https://g.pekingkeji.com
+[+] type: __NSCFString
+*** exited +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[-] ---------------------------------------------------------------
+
+Tracing +[AESUtils decryptWithCBC:key:]
+[+] ---------------------------------------------------------------
+*** entering +[AESUtils decryptWithCBC:key:]
+[+] 参数为NSData 不显示
+[+] type: OS_dispatch_data
+[+] arg3 key: XrbM2nGWTcCKTEzu5aHgPw==
+[+] type: __NSCFString
+[+] 类 args[0]: AESUtils
+[+] type: AESUtils
+[返回值]NSConcreteData NSData 类型数据，不显示
+>> 解密数据: >>> {"code":0,"msg":"success"}
+[+] type: NSConcreteData
+*** exited +[AESUtils decryptWithCBC:key:]
+[-] ---------------------------------------------------------------
+
+Tracing -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] ---------------------------------------------------------------
+*** entering -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] arg2 rnSendGetRequest: {
+    p = "/app/video/clarity";
+    s = vdbase;
+}
+[+] type: __NSDictionaryM
+[+] arg3 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg4 data: {"userid":"4yb81d","res_key":"tf9imbiwszum"}
+[+] type: __NSCFString
+[+] arg5 resolve: <__NSMallocBlock__: 0x2811f5ef0>
+[+] type: __NSMallocBlock__
+[+] arg6 rejecter: <__NSMallocBlock__: 0x2811f59b0>
+[+] type: __NSMallocBlock__
+[+] 类 args[0]: <RNServiceConnect: 0x281f9ca10>
+[+] type: RNServiceConnect
+Tracing +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] ---------------------------------------------------------------
+*** entering +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] arg2 sendHttpPostAsync: https://g.pekingkeji.com
+[+] type: __NSCFString
+[+] arg3 path: {
+    m = g;
+    p = "/app/video/clarity";
+    s = vdbase;
+}
+[+] type: __NSDictionaryM
+[+] arg4 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg5 data: {"userid":"4yb81d","res_key":"tf9imbiwszum"}
+[+] type: __NSCFString
+[+] arg6 callback: <__NSStackBlock__: 0x16fb0a4f8>
+[+] type: __NSStackBlock__
+[+] arg7 errorCallback: <__NSStackBlock__: 0x16fb0a4d0>
+[+] type: __NSStackBlock__
+[+] 类 args[0]: ServerConnectUtils
+[+] type: ServerConnectUtils
+Tracing +[AESUtils encryptWithCBC:key:]
+[+] ---------------------------------------------------------------
+*** entering +[AESUtils encryptWithCBC:key:]
+[+] 参数为NSData 不显示
+[+] type: NSConcreteMutableData
+[+] arg3 key: XrbM2nGWTcCKTEzu5aHgPw==
+[+] type: __NSCFString
+[+] 类 args[0]: AESUtils
+[+] type: AESUtils
+[返回值]NSConcreteMutableData NSData 类型数据，不显示
+error: retval: 0x2811f4180
+*** exited +[AESUtils encryptWithCBC:key:]
+[-] ---------------------------------------------------------------
+
+[返回值] __NSCFStringretval: https://g.pekingkeji.com
+[+] type: __NSCFString
+*** exited +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[-] ---------------------------------------------------------------
+
+[返回值] __NSDictionaryMretval: {
+    p = "/app/video/clarity";
+    s = vdbase;
+}
+[+] type: __NSDictionaryM
+*** exited -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[-] ---------------------------------------------------------------
+
+Tracing -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] ---------------------------------------------------------------
+*** entering -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] arg2 rnSendGetRequest: {
+    p = "/app-page/videos/tf9imbiwszum/detail/full-static";
+    s = applayout;
+}
+[+] type: __NSDictionaryM
+[+] arg3 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg4 data: 
+[+] type: __NSCFConstantString
+[+] arg5 resolve: <__NSMallocBlock__: 0x2811f7960>
+[+] type: __NSMallocBlock__
+[+] arg6 rejecter: <__NSMallocBlock__: 0x2811f7c30>
+[+] type: __NSMallocBlock__
+[+] 类 args[0]: <RNServiceConnect: 0x281f9ca10>
+[+] type: RNServiceConnect
+Tracing +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] ---------------------------------------------------------------
+*** entering +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] arg2 sendHttpPostAsync: https://g.pekingkeji.com
+[+] type: __NSCFString
+[+] arg3 path: {
+    m = g;
+    p = "/app-page/videos/tf9imbiwszum/detail/full-static";
+    s = applayout;
+}
+[+] type: __NSDictionaryM
+[+] arg4 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg5 data: 
+[+] type: __NSCFConstantString
+[+] arg6 callback: <__NSStackBlock__: 0x16fb0a4f8>
+[+] type: __NSStackBlock__
+[+] arg7 errorCallback: <__NSStackBlock__: 0x16fb0a4d0>
+[+] type: __NSStackBlock__
+[+] 类 args[0]: ServerConnectUtils
+[+] type: ServerConnectUtils
+[返回值] __NSCFStringretval: https://g.pekingkeji.com
+[+] type: __NSCFString
+*** exited +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[-] ---------------------------------------------------------------
+
+[返回值] __NSDictionaryMretval: {
+    p = "/app-page/videos/tf9imbiwszum/detail/full-static";
+    s = applayout;
+}
+[+] type: __NSDictionaryM
+*** exited -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[-] ---------------------------------------------------------------
+
+Tracing -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] ---------------------------------------------------------------
+*** entering -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] arg2 rnSendGetRequest: {
+    p = "/app/actor/recommend/incategory/fixed";
+    s = actorbase;
+}
+[+] type: __NSDictionaryM
+[+] arg3 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg4 data: {"userid":"4yb81d","category_id":"","for_user":true,"limit":12}
+[+] type: __NSCFString
+[+] arg5 resolve: <__NSMallocBlock__: 0x2811f5830>
+[+] type: __NSMallocBlock__
+[+] arg6 rejecter: <__NSMallocBlock__: 0x2811f52c0>
+[+] type: __NSMallocBlock__
+[+] 类 args[0]: <RNServiceConnect: 0x281f9ca10>
+[+] type: RNServiceConnect
+Tracing +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] ---------------------------------------------------------------
+*** entering +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] arg2 sendHttpPostAsync: https://g.pekingkeji.com
+[+] type: __NSCFString
+[+] arg3 path: {
+    m = g;
+    p = "/app/actor/recommend/incategory/fixed";
+    s = actorbase;
+}
+[+] type: __NSDictionaryM
+[+] arg4 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg5 data: {"userid":"4yb81d","category_id":"","for_user":true,"limit":12}
+[+] type: __NSCFString
+[+] arg6 callback: <__NSStackBlock__: 0x16fb0a4f8>
+[+] type: __NSStackBlock__
+[+] arg7 errorCallback: <__NSStackBlock__: 0x16fb0a4d0>
+[+] type: __NSStackBlock__
+[+] 类 args[0]: ServerConnectUtils
+[+] type: ServerConnectUtils
+Tracing +[AESUtils encryptWithCBC:key:]
+[+] ---------------------------------------------------------------
+*** entering +[AESUtils encryptWithCBC:key:]
+[+] 参数为NSData 不显示
+[+] type: NSConcreteMutableData
+[+] arg3 key: XrbM2nGWTcCKTEzu5aHgPw==
+[+] type: __NSCFString
+[+] 类 args[0]: AESUtils
+[+] type: AESUtils
+[返回值]NSConcreteMutableData NSData 类型数据，不显示
+error: retval: 0x2811e6c40
+*** exited +[AESUtils encryptWithCBC:key:]
+[-] ---------------------------------------------------------------
+
+[返回值] __NSCFStringretval: https://g.pekingkeji.com
+[+] type: __NSCFString
+*** exited +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[-] ---------------------------------------------------------------
+
+[返回值] __NSDictionaryMretval: {
+    p = "/app/actor/recommend/incategory/fixed";
+    s = actorbase;
+}
+[+] type: __NSDictionaryM
+*** exited -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[-] ---------------------------------------------------------------
+
+Tracing +[AESUtils encryptWithCBC:key:]
+[+] ---------------------------------------------------------------
+*** entering +[AESUtils encryptWithCBC:key:]
+[+] 参数为NSData 不显示
+[+] type: NSConcreteMutableData
+[+] arg3 key: qq0g6Jp2JfOHKv78q64M7w==
+[+] type: __NSCFString
+[+] 类 args[0]: AESUtils
+[+] type: AESUtils
+[返回值]NSConcreteMutableData NSData 类型数据，不显示
+error: retval: 0x2811fb150
+*** exited +[AESUtils encryptWithCBC:key:]
+[-] ---------------------------------------------------------------
+
+Tracing +[AESUtils decryptWithCBC:key:]
+[+] ---------------------------------------------------------------
+*** entering +[AESUtils decryptWithCBC:key:]
+[+] 参数为NSData 不显示
+[+] type: OS_dispatch_data
+[+] arg3 key: qq0g6Jp2JfOHKv78q64M7w==
+[+] type: __NSCFString
+[+] 类 args[0]: AESUtils
+[+] type: AESUtils
+[返回值]NSConcreteData NSData 类型数据，不显示
+>> 解密数据: >>> {"cmd_version":3,"client_ip":"125.70.176.22","heartbeat_sec":8,"result":false,"cmd_info":null}
+[+] type: NSConcreteData
+*** exited +[AESUtils decryptWithCBC:key:]
+[-] ---------------------------------------------------------------
+
+Tracing +[AESUtils decryptWithCBC:key:]
+[+] ---------------------------------------------------------------
+*** entering +[AESUtils decryptWithCBC:key:]
+[+] 参数为NSData 不显示
+[+] type: OS_dispatch_data
+[+] arg3 key: XrbM2nGWTcCKTEzu5aHgPw==
+[+] type: __NSCFString
+[+] 类 args[0]: AESUtils
+[+] type: AESUtils
+[返回值]NSConcreteData NSData 类型数据，不显示
+>> 解密数据: >>> {"code":0,"data":[{"clarity_id":"3","clarity_id_text":"高清","video_uri":"https://w1.zikl.xyz/cos/txvideo-new/scraper/bbb/mp4-720p/ts/bd77e347b3d747678e756f533acdc032.m3u8","filesize":1132551668}],"msg":"success"}
+[+] type: NSConcreteData
+*** exited +[AESUtils decryptWithCBC:key:]
+[-] ---------------------------------------------------------------
+
+Tracing -[IJKFFMoviePlayerController initWithContentURL:withOptions:]
+[+] ---------------------------------------------------------------
+*** entering -[IJKFFMoviePlayerController initWithContentURL:withOptions:]
+[+] arg2 initWithContentURL: cache2:https://w1.zikl.xyz/cos/txvideo-new/scraper/bbb/mp4-720p/ts/bd77e347b3d747678e756f533acdc032.m3u8
+[+] type: NSURL
+[+] arg3 withOptions: <IJKFFOptions: 0x280265d40>
+[+] type: IJKFFOptions
+[+] 类 args[0]: <IJKFFMoviePlayerController: 0x11cea78c0>
+[+] type: IJKFFMoviePlayerController
+Tracing -[IJKFFMoviePlayerController initWithContentURLString:withOptions:]
+[+] ---------------------------------------------------------------
+*** entering -[IJKFFMoviePlayerController initWithContentURLString:withOptions:]
+[+] arg2 initWithContentURLString: cache2:https://w1.zikl.xyz/cos/txvideo-new/scraper/bbb/mp4-720p/ts/bd77e347b3d747678e756f533acdc032.m3u8
+[+] type: __NSCFString
+[+] arg3 withOptions: <IJKFFOptions: 0x280265d40>
+[+] type: IJKFFOptions
+[+] 类 args[0]: <IJKFFMoviePlayerController: 0x11cea78c0>
+[+] type: IJKFFMoviePlayerController
+[返回值] IJKFFMoviePlayerControllerretval: <IJKFFMoviePlayerController: 0x11cea78c0>
+[+] type: IJKFFMoviePlayerController
+*** exited -[IJKFFMoviePlayerController initWithContentURLString:withOptions:]
+[-] ---------------------------------------------------------------
+
+[返回值] IJKFFMoviePlayerControllerretval: <IJKFFMoviePlayerController: 0x11cea78c0>
+[+] type: IJKFFMoviePlayerController
+*** exited -[IJKFFMoviePlayerController initWithContentURL:withOptions:]
+[-] ---------------------------------------------------------------
+
+Tracing +[AESUtils encryptWithCBC:key:]
+[+] ---------------------------------------------------------------
+*** entering +[AESUtils encryptWithCBC:key:]
+[+] 参数为NSData 不显示
+[+] type: NSConcreteMutableData
+[+] arg3 key: qq0g6Jp2JfOHKv78q64M7w==
+[+] type: __NSCFString
+[+] 类 args[0]: AESUtils
+[+] type: AESUtils
+[返回值]NSConcreteMutableData NSData 类型数据，不显示
+error: retval: 0x281117ab0
+*** exited +[AESUtils encryptWithCBC:key:]
+[-] ---------------------------------------------------------------
+
+Tracing +[AESUtils decryptWithCBC:key:]
+[+] ---------------------------------------------------------------
+*** entering +[AESUtils decryptWithCBC:key:]
+[+] 参数为NSData 不显示
+[+] type: OS_dispatch_data
+[+] arg3 key: qq0g6Jp2JfOHKv78q64M7w==
+[+] type: __NSCFString
+[+] 类 args[0]: AESUtils
+[+] type: AESUtils
+[返回值]NSConcreteData NSData 类型数据，不显示
+>> 解密数据: >>> {"cmd_version":3,"client_ip":"125.70.176.22","heartbeat_sec":8,"result":false,"cmd_info":null}
+[+] type: NSConcreteData
+*** exited +[AESUtils decryptWithCBC:key:]
+[-] ---------------------------------------------------------------
+
+
+[iPhone::好色先生TV ]-> exit
+
+Thank you for using Frida!

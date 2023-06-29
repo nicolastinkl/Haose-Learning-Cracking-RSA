@@ -1,0 +1,392 @@
+首次进入加载：请求:
+
+*** exited +[InitServerConnect pingAddressTest:]
+[-] ---------------------------------------------------------------
+
+[返回值] __NSCFStringretval: {
+  "did" : "Bbc0cta7npQhNxZlJ7KgSw==",
+  "video_aeskey" : "TwtsEgjErnXRwOo1ofUQ2g==",
+  "img_aeskey" : "1V6WW9fMB2MAPOVOD2DRfw==",
+  "watermark" : ""
+}
+[+] type: __NSCFString
+*** exited +[InitServerConnect initGetAppUrlInfo]
+[-] ---------------------------------------------------------------
+
+
+
+Thank you for using Frida!
+nantian@Mac-Studio frida-script-ios % frida -UF -l iOS_Trace.js   –no-pause
+     ____
+    / _  |   Frida 16.0.11 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to iPhone (id=4a39ccef9af42fd04b0029d24873a0d2834c0fee)
+No frontmost application on iPhone
+nantian@Mac-Studio frida-script-ios % frida -UF -l iOS_Trace.js   –no-pause
+     ____
+    / _  |   Frida 16.0.11 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to iPhone (id=4a39ccef9af42fd04b0029d24873a0d2834c0fee)
+Tracing - Name: -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:] address: 0x104afff8c
+Tracing - Name: +[InitServerConnect initGetServerInfo] address: 0x104b392b8
+Tracing - Name: +[InitServerConnect initGetAppUrlInfo] address: 0x104b3adcc
+Tracing - Name: +[InitServerConnect pingAddressTest:] address: 0x104b3aa58
+Tracing - Name: +[InitServerConnect gettingServerInfo:uuid:] address: 0x104b3a204
+Tracing - Name: +[InitServerConnect getServerAddrListByUrl:] address: 0x104b39ed4
+Tracing - Name: -[IJKFFMoviePlayerController initWithContentURL:withOptions:] address: 0x104e1dc44
+Tracing - Name: -[IJKFFMoviePlayerController initWithContentURLString:withOptions:] address: 0x104e1dd7c
+Tracing - Name: +[ServerInfo getVideoAESKey] address: 0x104b3c298
+[iPhone::好色先生TV ]-> Tracing +[InitServerConnect initGetServerInfo]
+[+] ---------------------------------------------------------------
+*** entering +[InitServerConnect initGetServerInfo]
+[+] 类 args[0]: InitServerConnect
+[+] type: InitServerConnect
+Tracing +[InitServerConnect pingAddressTest:]
+[+] ---------------------------------------------------------------
+*** entering +[InitServerConnect pingAddressTest:]
+Tracing +[InitServerConnect pingAddressTest:]
+[+] ---------------------------------------------------------------
+*** entering +[InitServerConnect pingAddressTest:]
+[+] arg2 pingAddressTest: https://api.vs54.cn/api-speed/1679629298yB6SoNMtj9hHVAiC86EA694-7924-4030-9AB2-23EC989595E9
+[+] type: __NSCFString
+[+] arg2 pingAddressTest: https://g.pekingkeji.com/api-speed/1679629298dBFEBSRs7S5ALVZ4DDD5D20-2059-4A45-B547-27BF01DC5141
+[+] type: __NSCFString
+Tracing +[InitServerConnect pingAddressTest:]
+[+] ---------------------------------------------------------------
+*** entering +[InitServerConnect pingAddressTest:]
+[+] arg2 pingAddressTest: https://work.kokonunu.com/api-speed/1679629298ehWOTyHnMY2LTxOB6A791AD-99A3-4542-BD8B-AD2A0F320D0C
+[+] type: __NSCFString
+[+] 类 args[0]: InitServerConnect
+[+] type: InitServerConnect
+[+] 类 args[0]: InitServerConnect
+[+] type: InitServerConnect
+[+] 类 args[0]: InitServerConnect
+[+] type: InitServerConnect
+*** exited +[InitServerConnect pingAddressTest:]
+[-] ---------------------------------------------------------------
+
+*** exited +[InitServerConnect initGetServerInfo]
+[-] ---------------------------------------------------------------
+
+Tracing +[InitServerConnect initGetAppUrlInfo]
+[+] ---------------------------------------------------------------
+*** entering +[InitServerConnect initGetAppUrlInfo]
+[+] 类 args[0]: InitServerConnect
+[+] type: InitServerConnect
+Tracing +[InitServerConnect pingAddressTest:]
+
+[+] ---------------------------------------------------------------
+*** entering +[InitServerConnect pingAddressTest:]
+Tracing +[InitServerConnect pingAddressTest:]
+[+] ---------------------------------------------------------------
+*** entering +[InitServerConnect pingAddressTest:]
+[+] arg2 pingAddressTest: https://g.pekingkeji.com/api-speed/1679629299XvCydxbylVnKh8oE9DA18F2-C266-4FB7-ABE7-214A559340E6
+[+] type: __NSCFString
+[+] arg2 pingAddressTest: https://api.vs54.cn/api-speed/1679629299Feov36RTAdPNOcT5792A8E2-D7F4-4E1C-8837-CAA0D3C9AC3B
+[+] type: __NSCFString
+[+] 类 args[0]: InitServerConnect
+[+] type: InitServerConnect
+Tracing +[InitServerConnect pingAddressTest:]
+[+] ---------------------------------------------------------------
+*** entering +[InitServerConnect pingAddressTest:]
+[+] arg2 pingAddressTest: https://work.kokonunu.com/api-speed/1679629299ySAkynBwnhpsdstE11852BC-033F-4865-BF60-87BE9058B03F
+[+] type: __NSCFString
+[+] 类 args[0]: InitServerConnect
+[+] type: InitServerConnect
+[+] 类 args[0]: InitServerConnect
+[+] type: InitServerConnect
+*** exited +[InitServerConnect pingAddressTest:]
+[-] ---------------------------------------------------------------
+
+*** exited +[InitServerConnect pingAddressTest:]
+[-] ---------------------------------------------------------------
+
+[返回值] __NSCFStringretval: {
+  "did" : "Bbc0cta7npQhNxZlJ7KgSw==",
+  "video_aeskey" : "TwtsEgjErnXRwOo1ofUQ2g==",
+  "img_aeskey" : "1V6WW9fMB2MAPOVOD2DRfw==",
+  "watermark" : ""
+}
+[+] type: __NSCFString
+*** exited +[InitServerConnect initGetAppUrlInfo]
+[-] ---------------------------------------------------------------
+
+Tracing -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] ---------------------------------------------------------------
+*** entering -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] arg2 rnSendGetRequest: {
+    p = "/user/token/refresh";
+    s = passport;
+}
+[+] type: __NSDictionaryM
+[+] arg3 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg4 data:
+[+] type: __NSCFConstantString
+[+] arg5 resolve: <__NSMallocBlock__: 0x281d91140>
+[+] type: __NSMallocBlock__
+[+] arg6 rejecter: <__NSMallocBlock__: 0x281d911d0>
+[+] type: __NSMallocBlock__
+[+] 类 args[0]: <RNServiceConnect: 0x2811d4950>
+[+] type: RNServiceConnect
+[返回值] __NSDictionaryMretval: {
+    p = "/user/token/refresh";
+    s = passport;
+}
+[+] type: __NSDictionaryM
+*** exited -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[-] ---------------------------------------------------------------
+
+*** exited +[InitServerConnect pingAddressTest:]
+[-] ---------------------------------------------------------------
+
+Tracing -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] ---------------------------------------------------------------
+*** entering -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] arg2 rnSendGetRequest: {
+    p = "/app-page/taginfo/all";
+    s = applayout;
+}
+[+] type: __NSDictionaryM
+[+] arg3 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg4 data:
+[+] type: __NSCFConstantString
+[+] arg5 resolve: <__NSMallocBlock__: 0x281d90e10>
+[+] type: __NSMallocBlock__
+[+] arg6 rejecter: <__NSMallocBlock__: 0x281d91140>
+[+] type: __NSMallocBlock__
+[+] 类 args[0]: <RNServiceConnect: 0x2811d4950>
+[+] type: RNServiceConnect
+[返回值] __NSDictionaryMretval: {
+    p = "/app-page/taginfo/all";
+    s = applayout;
+}
+[+] type: __NSDictionaryM
+*** exited -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[-] ---------------------------------------------------------------
+
+Tracing -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] ---------------------------------------------------------------
+*** entering -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] arg2 rnSendGetRequest: {
+    p = "/app-page/navbars/actor";
+    s = applayout;
+}
+[+] type: __NSDictionaryM
+[+] arg3 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg4 data:
+[+] type: __NSCFConstantString
+[+] arg5 resolve: <__NSMallocBlock__: 0x281d9ca20>
+[+] type: __NSMallocBlock__
+[+] arg6 rejecter: <__NSMallocBlock__: 0x281d9cc90>
+[+] type: __NSMallocBlock__
+[+] 类 args[0]: <RNServiceConnect: 0x2811d4950>
+[+] type: RNServiceConnect
+[返回值] __NSDictionaryMretval: {
+    p = "/app-page/navbars/actor";
+    s = applayout;
+}
+[+] type: __NSDictionaryM
+*** exited -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[-] ---------------------------------------------------------------
+
+Tracing -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] ---------------------------------------------------------------
+*** entering -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] arg2 rnSendGetRequest: {
+    p = "/app/initinfo";
+    s = rua;
+}
+[+] type: __NSDictionaryM
+[+] arg3 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg4 data: {"userid":"4yb81d"}
+[+] type: __NSCFString
+[+] arg5 resolve: <__NSMallocBlock__: 0x281d93360>
+[+] type: __NSMallocBlock__
+[+] arg6 rejecter: <__NSMallocBlock__: 0x281d930c0>
+[+] type: __NSMallocBlock__
+[+] 类 args[0]: <RNServiceConnect: 0x2811d4950>
+[+] type: RNServiceConnect
+[返回值] __NSDictionaryMretval: {
+    p = "/app/initinfo";
+    s = rua;
+}
+[+] type: __NSDictionaryM
+*** exited -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[-] ---------------------------------------------------------------
+
+Tracing -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] ---------------------------------------------------------------
+*** entering -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] arg2 rnSendGetRequest: {
+    p = "/app/user/privilege/all";
+    s = growth;
+}
+[+] type: __NSDictionaryM
+[+] arg3 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg4 data: {"userid":"4yb81d"}
+[+] type: __NSCFString
+[+] arg5 resolve: <__NSMallocBlock__: 0x281d90810>
+[+] type: __NSMallocBlock__
+[+] arg6 rejecter: <__NSMallocBlock__: 0x281d93120>
+[+] type: __NSMallocBlock__
+[+] 类 args[0]: <RNServiceConnect: 0x2811d4950>
+[+] type: RNServiceConnect
+[返回值] __NSDictionaryMretval: {
+    p = "/app/user/privilege/all";
+    s = growth;
+}
+[+] type: __NSDictionaryM
+*** exited -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[-] ---------------------------------------------------------------
+
+Tracing -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] ---------------------------------------------------------------
+*** entering -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] arg2 rnSendGetRequest: {
+    p = "/broadcast/config";
+    s = xjconf;
+}
+[+] type: __NSDictionaryM
+[+] arg3 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg5 resolve: <__NSMallocBlock__: 0x281d9ced0>
+[+] type: __NSMallocBlock__
+[+] arg6 rejecter: <__NSMallocBlock__: 0x281d9dfe0>
+[+] type: __NSMallocBlock__
+[+] 类 args[0]: <RNServiceConnect: 0x2811d4950>
+[+] type: RNServiceConnect
+[返回值] __NSDictionaryMretval: {
+    p = "/broadcast/config";
+    s = xjconf;
+}
+[+] type: __NSDictionaryM
+*** exited -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[-] ---------------------------------------------------------------
+
+Tracing -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] ---------------------------------------------------------------
+*** entering -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] arg2 rnSendGetRequest: {
+    p = "/app-page/advertise/all";
+    s = applayout;
+}
+[+] type: __NSDictionaryM
+[+] arg3 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg4 data:
+[+] type: __NSCFConstantString
+[+] arg5 resolve: <__NSMallocBlock__: 0x281d9dfb0>
+[+] type: __NSMallocBlock__
+[+] arg6 rejecter: <__NSMallocBlock__: 0x281d9c7e0>
+[+] type: __NSMallocBlock__
+[+] 类 args[0]: <RNServiceConnect: 0x2811d4950>
+[+] type: RNServiceConnect
+[返回值] __NSDictionaryMretval: {
+    p = "/app-page/advertise/all";
+    s = applayout;
+}
+[+] type: __NSDictionaryM
+*** exited -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[-] ---------------------------------------------------------------
+
+Tracing -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] ---------------------------------------------------------------
+*** entering -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] arg2 rnSendGetRequest: {
+    p = "/app/bind-mobile/config";
+    s = growth;
+}
+[+] type: __NSDictionaryM
+[+] arg3 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg5 resolve: <__NSMallocBlock__: 0x281d9cd50>
+[+] type: __NSMallocBlock__
+[+] arg6 rejecter: <__NSMallocBlock__: 0x281d9cba0>
+[+] type: __NSMallocBlock__
+[+] 类 args[0]: <RNServiceConnect: 0x2811d4950>
+[+] type: RNServiceConnect
+[返回值] __NSDictionaryMretval: {
+    p = "/app/bind-mobile/config";
+    s = growth;
+}
+[+] type: __NSDictionaryM
+*** exited -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[-] ---------------------------------------------------------------
+
+Tracing -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] ---------------------------------------------------------------
+*** entering -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] arg2 rnSendGetRequest: {
+    p = "/qp/app/config/v2";
+    s = qpxj;
+}
+[+] type: __NSDictionaryM
+[+] arg3 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg4 data: {"userid":"4yb81d"}
+[+] type: __NSCFString
+[+] arg5 resolve: <__NSMallocBlock__: 0x281d988d0>
+[+] type: __NSMallocBlock__
+[+] arg6 rejecter: <__NSMallocBlock__: 0x281d98900>
+[+] type: __NSMallocBlock__
+[+] 类 args[0]: <RNServiceConnect: 0x2811d4950>
+[+] type: RNServiceConnect
+[返回值] __NSDictionaryMretval: {
+    p = "/qp/app/config/v2";
+    s = qpxj;
+}
+[+] type: __NSDictionaryM
+*** exited -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[-] ---------------------------------------------------------------
+
+Tracing -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] ---------------------------------------------------------------
+*** entering -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] arg2 rnSendGetRequest: {
+    p = "/app-page/navbars/home";
+    s = applayout;
+}
+[+] type: __NSDictionaryM
+[+] arg3 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg4 data:
+[+] type: __NSCFConstantString
+[+] arg5 resolve: <__NSMallocBlock__: 0x281d986f0>
+[+] type: __NSMallocBlock__
+[+] arg6 rejecter: <__NSMallocBlock__: 0x281d98870>
+[+] type: __NSMallocBlock__
+[+] 类 args[0]: <RNServiceConnect: 0x2811d4950>
+[+] type: RNServiceConnect
+[返回值] __NSDictionaryMretval: {
+    p = "/app-page/navbars/home";
+    s = applayout;
+}
+[+] type: __NSDictionaryM
+*** exited -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[-] ---------------------------------------------------------------
+
+*** exited +[InitServerConnect pingAddressTest:]
+[-] ---------------------------------------------------------------
+
+*** exited +[InitServerConnect pingAddressTest:]
+[-] ---------------------------------------------------------------
+

@@ -1,0 +1,6 @@
+framework module LottleiOS {
+  umbrella header "LottleiOS.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		733596ED29D52AB00007F45C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 733596EC29D52AB00007F45C /* UIKit.framework */; };
+		733596EF29D52AB00007F45C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 733596EE29D52AB00007F45C /* Foundation.framework */; };
+		733596F129D52AB00007F45C /* CydiaSubstrate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 733596F029D52AB00007F45C /* CydiaSubstrate.framework */; };
+		733596FA29D52AB00007F45C /* Hookhaosexians.mm in Sources */ = {isa = PBXBuildFile; fileRef = 733596F929D52AB00007F45C /* Hookhaosexians.mm */; };
+		7335970629D531C70007F45C /* test.h in Headers */ = {isa = PBXBuildFile; fileRef = 7335970429D531C70007F45C /* test.h */; };
+		7335970729D531C70007F45C /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 7335970529D531C70007F45C /* test.m */; };
+		7335970A29D536B80007F45C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7335970929D536B80007F45C /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		733596E929D52AB00007F45C /* Hookhaosexians.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Hookhaosexians.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		733596EC29D52AB00007F45C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		733596EE29D52AB00007F45C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		733596F029D52AB00007F45C /* CydiaSubstrate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CydiaSubstrate.framework; path = Library/Frameworks/CydiaSubstrate.framework; sourceTree = DEVELOPER_DIR; };
+		733596F529D52AB00007F45C /* control */ = {isa = PBXFileReference; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		733596F729D52AB00007F45C /* Hookhaosexians-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Hookhaosexians-Prefix.pch"; path = "../Hookhaosexians-Prefix.pch"; sourceTree = "<group>"; };
+		733596F829D52AB00007F45C /* Hookhaosexians.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = Hookhaosexians.xm; sourceTree = "<group>"; };
+		733596F929D52AB00007F45C /* Hookhaosexians.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Hookhaosexians.mm; sourceTree = "<group>"; };
+		733596FE29D52AB00007F45C /* Hookhaosexians.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Hookhaosexians.plist; sourceTree = "<group>"; };
+		7335970429D531C70007F45C /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		7335970529D531C70007F45C /* test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
+		7335970829D533280007F45C /* RNSScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNSScreen.h; sourceTree = "<group>"; };
+		7335970929D536B80007F45C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		733596E529D52AB00007F45C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7335970A29D536B80007F45C /* CoreGraphics.framework in Frameworks */,
+				733596ED29D52AB00007F45C /* UIKit.framework in Frameworks */,
+				733596EF29D52AB00007F45C /* Foundation.framework in Frameworks */,
+				733596F129D52AB00007F45C /* CydiaSubstrate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		733596DE29D52AAF0007F45C = {
+			isa = PBXGroup;
+			children = (
+				733596F229D52AB00007F45C /* Hookhaosexians */,
+				733596EB29D52AB00007F45C /* Frameworks */,
+				733596EA29D52AB00007F45C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		733596EA29D52AB00007F45C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				733596E929D52AB00007F45C /* Hookhaosexians.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		733596EB29D52AB00007F45C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7335970929D536B80007F45C /* CoreGraphics.framework */,
+				733596EC29D52AB00007F45C /* UIKit.framework */,
+				733596EE29D52AB00007F45C /* Foundation.framework */,
+				733596F029D52AB00007F45C /* CydiaSubstrate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		733596F229D52AB00007F45C /* Hookhaosexians */ = {
+			isa = PBXGroup;
+			children = (
+				733596F829D52AB00007F45C /* Hookhaosexians.xm */,
+				733596F929D52AB00007F45C /* Hookhaosexians.mm */,
+				733596F329D52AB00007F45C /* Package */,
+				733596F629D52AB00007F45C /* Supporting Files */,
+				7335970429D531C70007F45C /* test.h */,
+				7335970529D531C70007F45C /* test.m */,
+				7335970829D533280007F45C /* RNSScreen.h */,
+			);
+			path = Hookhaosexians;
+			sourceTree = "<group>";
+		};
+		733596F329D52AB00007F45C /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				733596F429D52AB00007F45C /* DEBIAN */,
+				733596FB29D52AB00007F45C /* Library */,
+			);
+			path = Package;
+			sourceTree = "<group>";
+		};
+		733596F429D52AB00007F45C /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				733596F529D52AB00007F45C /* control */,
+			);
+			path = DEBIAN;
+			sourceTree = "<group>";
+		};
+		733596F629D52AB00007F45C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				733596F729D52AB00007F45C /* Hookhaosexians-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		733596FB29D52AB00007F45C /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				733596FC29D52AB00007F45C /* MobileSubstrate */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		733596FC29D52AB00007F45C /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				733596FD29D52AB00007F45C /* DynamicLibraries */,
+			);
+			path = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		733596FD29D52AB00007F45C /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				733596FE29D52AB00007F45C /* Hookhaosexians.plist */,
+			);
+			path = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		733596E629D52AB00007F45C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7335970629D531C70007F45C /* test.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		733596E829D52AB00007F45C /* Hookhaosexians */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7335970129D52AB00007F45C /* Build configuration list for PBXNativeTarget "Hookhaosexians" */;
+			buildPhases = (
+				733596E329D52AB00007F45C /* ShellScript */,
+				733596E429D52AB00007F45C /* Sources */,
+				733596E529D52AB00007F45C /* Frameworks */,
+				733596E629D52AB00007F45C /* Headers */,
+				733596E729D52AB00007F45C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hookhaosexians;
+			productName = Hookhaosexians;
+			productReference = 733596E929D52AB00007F45C /* Hookhaosexians.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		733596DF29D52AAF0007F45C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					733596E829D52AB00007F45C = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 733596E229D52AAF0007F45C /* Build configuration list for PBXProject "Hookhaosexians" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 733596DE29D52AAF0007F45C;
+			productRefGroup = 733596EA29D52AB00007F45C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				733596E829D52AB00007F45C /* Hookhaosexians */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		733596E329D52AB00007F45C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+		733596E729D52AB00007F45C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		733596E429D52AB00007F45C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				733596FA29D52AB00007F45C /* Hookhaosexians.mm in Sources */,
+				7335970729D531C70007F45C /* test.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		733596FF29D52AB00007F45C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"Hookhaosexians\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7335970029D52AB00007F45C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"Hookhaosexians\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		7335970229D52AB00007F45C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Apple Development: Yafen Long (X455AFSYF7)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9MQGT75T3N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hookhaosexians/Hookhaosexians-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = localhost;
+				MonkeyDevDevicePassword = alpine;
+				MonkeyDevDevicePort = 2222;
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7335970329D52AB00007F45C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Apple Development: Yafen Long (X455AFSYF7)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9MQGT75T3N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hookhaosexians/Hookhaosexians-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = localhost;
+				MonkeyDevDevicePassword = alpine;
+				MonkeyDevDevicePort = 2222;
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		733596E229D52AAF0007F45C /* Build configuration list for PBXProject "Hookhaosexians" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				733596FF29D52AB00007F45C /* Release */,
+				7335970029D52AB00007F45C /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7335970129D52AB00007F45C /* Build configuration list for PBXNativeTarget "Hookhaosexians" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7335970229D52AB00007F45C /* Release */,
+				7335970329D52AB00007F45C /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 733596DF29D52AAF0007F45C /* Project object */;
+}

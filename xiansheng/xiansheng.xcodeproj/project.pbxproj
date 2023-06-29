@@ -1,0 +1,984 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7329F3FB29E00472007067DF /* HDLoggerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7329F3DA29E00472007067DF /* HDLoggerTableViewCell.m */; };
+		7329F3FC29E00472007067DF /* HDWindowLoggerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7329F3DC29E00472007067DF /* HDWindowLoggerItem.m */; };
+		7329F3FD29E00472007067DF /* HDWindowLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 7329F3DD29E00472007067DF /* HDWindowLogger.h */; };
+		7329F3FE29E00472007067DF /* HDLoggerTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 7329F3DE29E00472007067DF /* HDLoggerTableViewCell.h */; };
+		7329F3FF29E00472007067DF /* HDWindowLoggerItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 7329F3DF29E00472007067DF /* HDWindowLoggerItem.h */; };
+		7329F40029E00472007067DF /* HDWindowLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7329F3E029E00472007067DF /* HDWindowLogger.m */; };
+		7329F40129E00472007067DF /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 7329F3E229E00472007067DF /* MASCompositeConstraint.h */; };
+		7329F40229E00472007067DF /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7329F3E329E00472007067DF /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		7329F40329E00472007067DF /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 7329F3E429E00472007067DF /* MASConstraint+Private.h */; };
+		7329F40429E00472007067DF /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 7329F3E529E00472007067DF /* MASLayoutConstraint.h */; };
+		7329F40529E00472007067DF /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7329F3E629E00472007067DF /* NSArray+MASShorthandAdditions.h */; };
+		7329F40629E00472007067DF /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 7329F3E729E00472007067DF /* MASConstraintMaker.h */; };
+		7329F40729E00472007067DF /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7329F3E829E00472007067DF /* View+MASAdditions.h */; };
+		7329F40829E00472007067DF /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7329F3E929E00472007067DF /* NSArray+MASAdditions.h */; };
+		7329F40929E00472007067DF /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 7329F3EA29E00472007067DF /* MASUtilities.h */; };
+		7329F40A29E00472007067DF /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 7329F3EB29E00472007067DF /* MASViewAttribute.h */; };
+		7329F40B29E00472007067DF /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7329F3EC29E00472007067DF /* ViewController+MASAdditions.m */; };
+		7329F40C29E00472007067DF /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 7329F3ED29E00472007067DF /* MASViewConstraint.h */; };
+		7329F40D29E00472007067DF /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 7329F3EE29E00472007067DF /* MASConstraint.h */; };
+		7329F40E29E00472007067DF /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7329F3EF29E00472007067DF /* NSLayoutConstraint+MASDebugAdditions.h */; };
+		7329F40F29E00472007067DF /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 7329F3F029E00472007067DF /* MASCompositeConstraint.m */; };
+		7329F41029E00472007067DF /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7329F3F129E00472007067DF /* MASConstraintMaker.m */; };
+		7329F41129E00472007067DF /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 7329F3F229E00472007067DF /* MASLayoutConstraint.m */; };
+		7329F41229E00472007067DF /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7329F3F329E00472007067DF /* NSArray+MASAdditions.m */; };
+		7329F41329E00472007067DF /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7329F3F429E00472007067DF /* View+MASAdditions.m */; };
+		7329F41429E00472007067DF /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7329F3F529E00472007067DF /* View+MASShorthandAdditions.h */; };
+		7329F41529E00472007067DF /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 7329F3F629E00472007067DF /* Masonry.h */; };
+		7329F41629E00472007067DF /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 7329F3F729E00472007067DF /* MASConstraint.m */; };
+		7329F41729E00472007067DF /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7329F3F829E00472007067DF /* ViewController+MASAdditions.h */; };
+		7329F41829E00472007067DF /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 7329F3F929E00472007067DF /* MASViewConstraint.m */; };
+		7329F41929E00472007067DF /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 7329F3FA29E00472007067DF /* MASViewAttribute.m */; };
+		7329F41C29E0051E007067DF /* test.h in Headers */ = {isa = PBXBuildFile; fileRef = 7329F41A29E0051E007067DF /* test.h */; };
+		7329F41D29E0051E007067DF /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 7329F41B29E0051E007067DF /* test.m */; };
+		7329F42029E0069F007067DF /* TNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 7329F41E29E0069F007067DF /* TNetwork.m */; };
+		7329F42129E0069F007067DF /* TNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 7329F41F29E0069F007067DF /* TNetwork.h */; };
+		73A95D4129DDAE79001A5C0B /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73A95D4029DDAE79001A5C0B /* MDConfig.plist */; };
+		73A95D4B29DDAE79001A5C0B /* libxianshengDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 73A95D4A29DDAE79001A5C0B /* libxianshengDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		73A95D5029DDAE79001A5C0B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A95D4F29DDAE79001A5C0B /* JavaScriptCore.framework */; };
+		73A95D5229DDAE79001A5C0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A95D5129DDAE79001A5C0B /* Foundation.framework */; };
+		73A95D5429DDAE79001A5C0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A95D5329DDAE79001A5C0B /* UIKit.framework */; };
+		73A95D5929DDAE79001A5C0B /* xianshengDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 73A95D5829DDAE79001A5C0B /* xianshengDylib.mm */; };
+		73A95D5C29DDAE79001A5C0B /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 73A95D5B29DDAE79001A5C0B /* MDConfigManager.h */; };
+		73A95D5E29DDAE79001A5C0B /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A95D5D29DDAE79001A5C0B /* MDConfigManager.m */; };
+		73A95D6029DDAE79001A5C0B /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 73A95D5F29DDAE79001A5C0B /* MDCycriptManager.h */; };
+		73A95D6229DDAE79001A5C0B /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A95D6129DDAE79001A5C0B /* MDCycriptManager.m */; };
+		73A95D6429DDAE79001A5C0B /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 73A95D6329DDAE79001A5C0B /* MDMethodTrace.h */; };
+		73A95D6629DDAE79001A5C0B /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A95D6529DDAE79001A5C0B /* MDMethodTrace.m */; };
+		73A95D6929DDAE79001A5C0B /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 73A95D6829DDAE79001A5C0B /* a1a2-selectortramps-arm.s */; };
+		73A95D6B29DDAE79001A5C0B /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = 73A95D6A29DDAE79001A5C0B /* a1a2-selectortramps-arm64.s */; };
+		73A95D6D29DDAE79001A5C0B /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 73A95D6C29DDAE79001A5C0B /* a1a2-selectortramps-i386.s */; };
+		73A95D6F29DDAE79001A5C0B /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 73A95D6E29DDAE79001A5C0B /* a1a2-selectortramps-x86_64.s */; };
+		73A95D7129DDAE79001A5C0B /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 73A95D7029DDAE79001A5C0B /* a2a3-selectortramps-arm.s */; };
+		73A95D7329DDAE79001A5C0B /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 73A95D7229DDAE79001A5C0B /* a2a3-selectortramps-i386.s */; };
+		73A95D7529DDAE79001A5C0B /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 73A95D7429DDAE79001A5C0B /* a2a3-selectortramps-x86_64.s */; };
+		73A95D7729DDAE79001A5C0B /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 73A95D7629DDAE79001A5C0B /* OCMethodTrace.h */; };
+		73A95D7929DDAE79001A5C0B /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A95D7829DDAE79001A5C0B /* OCMethodTrace.m */; };
+		73A95D7B29DDAE79001A5C0B /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = 73A95D7A29DDAE79001A5C0B /* OCSelectorTrampolines.h */; };
+		73A95D7D29DDAE79001A5C0B /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = 73A95D7C29DDAE79001A5C0B /* OCSelectorTrampolines.mm */; };
+		73A95D8129DDAE79001A5C0B /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 73A95D8029DDAE79001A5C0B /* LLDBTools.h */; };
+		73A95D8329DDAE79001A5C0B /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 73A95D8229DDAE79001A5C0B /* LLDBTools.mm */; };
+		73A95D8829DDAE79001A5C0B /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A95D8729DDAE79001A5C0B /* AntiAntiDebug.m */; };
+		73A95D8B29DDAE79001A5C0B /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 73A95D8A29DDAE79001A5C0B /* fishhook.c */; };
+		73A95D8D29DDAE79001A5C0B /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 73A95D8C29DDAE79001A5C0B /* fishhook.h */; };
+		73A95D8F29DDAE79001A5C0B /* xianshengDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 73A95D8E29DDAE79001A5C0B /* xianshengDylib.h */; };
+		73A95D9129DDAE79001A5C0B /* xianshengDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A95D9029DDAE79001A5C0B /* xianshengDylib.m */; };
+		73A95D9B29DDAE86001A5C0B /* xianshen_1.9.2.ipa in Resources */ = {isa = PBXBuildFile; fileRef = 73A95D9A29DDAE86001A5C0B /* xianshen_1.9.2.ipa */; };
+		73A95D9D29DDB1F9001A5C0B /* RNSScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = 73A95D9C29DDB1F9001A5C0B /* RNSScreen.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		73A95D4C29DDAE79001A5C0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73A95D2E29DDAE79001A5C0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73A95D4929DDAE79001A5C0B;
+			remoteInfo = xianshengDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		73A95D3629DDAE79001A5C0B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				73A95D4B29DDAE79001A5C0B /* libxianshengDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7329F3D929E00472007067DF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		7329F3DA29E00472007067DF /* HDLoggerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDLoggerTableViewCell.m; sourceTree = "<group>"; };
+		7329F3DB29E00472007067DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7329F3DC29E00472007067DF /* HDWindowLoggerItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDWindowLoggerItem.m; sourceTree = "<group>"; };
+		7329F3DD29E00472007067DF /* HDWindowLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDWindowLogger.h; sourceTree = "<group>"; };
+		7329F3DE29E00472007067DF /* HDLoggerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDLoggerTableViewCell.h; sourceTree = "<group>"; };
+		7329F3DF29E00472007067DF /* HDWindowLoggerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDWindowLoggerItem.h; sourceTree = "<group>"; };
+		7329F3E029E00472007067DF /* HDWindowLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDWindowLogger.m; sourceTree = "<group>"; };
+		7329F3E229E00472007067DF /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		7329F3E329E00472007067DF /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		7329F3E429E00472007067DF /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		7329F3E529E00472007067DF /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		7329F3E629E00472007067DF /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		7329F3E729E00472007067DF /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		7329F3E829E00472007067DF /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		7329F3E929E00472007067DF /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		7329F3EA29E00472007067DF /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		7329F3EB29E00472007067DF /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		7329F3EC29E00472007067DF /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		7329F3ED29E00472007067DF /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		7329F3EE29E00472007067DF /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		7329F3EF29E00472007067DF /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		7329F3F029E00472007067DF /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		7329F3F129E00472007067DF /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		7329F3F229E00472007067DF /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		7329F3F329E00472007067DF /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		7329F3F429E00472007067DF /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		7329F3F529E00472007067DF /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		7329F3F629E00472007067DF /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		7329F3F729E00472007067DF /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		7329F3F829E00472007067DF /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		7329F3F929E00472007067DF /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		7329F3FA29E00472007067DF /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		7329F41A29E0051E007067DF /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		7329F41B29E0051E007067DF /* test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
+		7329F41E29E0069F007067DF /* TNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNetwork.m; sourceTree = "<group>"; };
+		7329F41F29E0069F007067DF /* TNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNetwork.h; sourceTree = "<group>"; };
+		73A95D3929DDAE79001A5C0B /* xiansheng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xiansheng.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		73A95D3C29DDAE79001A5C0B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		73A95D3E29DDAE79001A5C0B /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "quick-resign.sh"; sourceTree = "<group>"; };
+		73A95D4029DDAE79001A5C0B /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MDConfig.plist; sourceTree = "<group>"; };
+		73A95D4329DDAE79001A5C0B /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; path = "put ipa or app here"; sourceTree = "<group>"; };
+		73A95D4429DDAE79001A5C0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73A95D4A29DDAE79001A5C0B /* libxianshengDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libxianshengDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		73A95D4F29DDAE79001A5C0B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		73A95D5129DDAE79001A5C0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		73A95D5329DDAE79001A5C0B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		73A95D5729DDAE79001A5C0B /* xianshengDylib.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = xianshengDylib.xm; sourceTree = "<group>"; };
+		73A95D5829DDAE79001A5C0B /* xianshengDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = xianshengDylib.mm; sourceTree = "<group>"; };
+		73A95D5B29DDAE79001A5C0B /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDConfigManager.h; sourceTree = "<group>"; };
+		73A95D5D29DDAE79001A5C0B /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDConfigManager.m; sourceTree = "<group>"; };
+		73A95D5F29DDAE79001A5C0B /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCycriptManager.h; sourceTree = "<group>"; };
+		73A95D6129DDAE79001A5C0B /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCycriptManager.m; sourceTree = "<group>"; };
+		73A95D6329DDAE79001A5C0B /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMethodTrace.h; sourceTree = "<group>"; };
+		73A95D6529DDAE79001A5C0B /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMethodTrace.m; sourceTree = "<group>"; };
+		73A95D6829DDAE79001A5C0B /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		73A95D6A29DDAE79001A5C0B /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		73A95D6C29DDAE79001A5C0B /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		73A95D6E29DDAE79001A5C0B /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		73A95D7029DDAE79001A5C0B /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		73A95D7229DDAE79001A5C0B /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		73A95D7429DDAE79001A5C0B /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		73A95D7629DDAE79001A5C0B /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMethodTrace.h; sourceTree = "<group>"; };
+		73A95D7829DDAE79001A5C0B /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMethodTrace.m; sourceTree = "<group>"; };
+		73A95D7A29DDAE79001A5C0B /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		73A95D7C29DDAE79001A5C0B /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		73A95D7E29DDAE79001A5C0B /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; path = selectortramps.mac; sourceTree = "<group>"; };
+		73A95D8029DDAE79001A5C0B /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLDBTools.h; sourceTree = "<group>"; };
+		73A95D8229DDAE79001A5C0B /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LLDBTools.mm; sourceTree = "<group>"; };
+		73A95D8529DDAE79001A5C0B /* xianshengDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "xianshengDylib-Prefix.pch"; path = "../xianshengDylib-Prefix.pch"; sourceTree = "<group>"; };
+		73A95D8729DDAE79001A5C0B /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AntiAntiDebug.m; sourceTree = "<group>"; };
+		73A95D8A29DDAE79001A5C0B /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		73A95D8C29DDAE79001A5C0B /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		73A95D8E29DDAE79001A5C0B /* xianshengDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xianshengDylib.h; sourceTree = "<group>"; };
+		73A95D9029DDAE79001A5C0B /* xianshengDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xianshengDylib.m; sourceTree = "<group>"; };
+		73A95D9A29DDAE86001A5C0B /* xianshen_1.9.2.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = xianshen_1.9.2.ipa; sourceTree = "<group>"; };
+		73A95D9C29DDB1F9001A5C0B /* RNSScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNSScreen.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		73A95D3329DDAE79001A5C0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73A95D4729DDAE79001A5C0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73A95D5029DDAE79001A5C0B /* JavaScriptCore.framework in Frameworks */,
+				73A95D5429DDAE79001A5C0B /* UIKit.framework in Frameworks */,
+				73A95D5229DDAE79001A5C0B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7329F3D729E00472007067DF /* HDWindowLogger */ = {
+			isa = PBXGroup;
+			children = (
+				7329F3D829E00472007067DF /* Localizable.strings */,
+				7329F3DA29E00472007067DF /* HDLoggerTableViewCell.m */,
+				7329F3DC29E00472007067DF /* HDWindowLoggerItem.m */,
+				7329F3DD29E00472007067DF /* HDWindowLogger.h */,
+				7329F3DE29E00472007067DF /* HDLoggerTableViewCell.h */,
+				7329F3DF29E00472007067DF /* HDWindowLoggerItem.h */,
+				7329F3E029E00472007067DF /* HDWindowLogger.m */,
+			);
+			path = HDWindowLogger;
+			sourceTree = "<group>";
+		};
+		7329F3E129E00472007067DF /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				7329F3E229E00472007067DF /* MASCompositeConstraint.h */,
+				7329F3E329E00472007067DF /* NSLayoutConstraint+MASDebugAdditions.m */,
+				7329F3E429E00472007067DF /* MASConstraint+Private.h */,
+				7329F3E529E00472007067DF /* MASLayoutConstraint.h */,
+				7329F3E629E00472007067DF /* NSArray+MASShorthandAdditions.h */,
+				7329F3E729E00472007067DF /* MASConstraintMaker.h */,
+				7329F3E829E00472007067DF /* View+MASAdditions.h */,
+				7329F3E929E00472007067DF /* NSArray+MASAdditions.h */,
+				7329F3EA29E00472007067DF /* MASUtilities.h */,
+				7329F3EB29E00472007067DF /* MASViewAttribute.h */,
+				7329F3EC29E00472007067DF /* ViewController+MASAdditions.m */,
+				7329F3ED29E00472007067DF /* MASViewConstraint.h */,
+				7329F3EE29E00472007067DF /* MASConstraint.h */,
+				7329F3EF29E00472007067DF /* NSLayoutConstraint+MASDebugAdditions.h */,
+				7329F3F029E00472007067DF /* MASCompositeConstraint.m */,
+				7329F3F129E00472007067DF /* MASConstraintMaker.m */,
+				7329F3F229E00472007067DF /* MASLayoutConstraint.m */,
+				7329F3F329E00472007067DF /* NSArray+MASAdditions.m */,
+				7329F3F429E00472007067DF /* View+MASAdditions.m */,
+				7329F3F529E00472007067DF /* View+MASShorthandAdditions.h */,
+				7329F3F629E00472007067DF /* Masonry.h */,
+				7329F3F729E00472007067DF /* MASConstraint.m */,
+				7329F3F829E00472007067DF /* ViewController+MASAdditions.h */,
+				7329F3F929E00472007067DF /* MASViewConstraint.m */,
+				7329F3FA29E00472007067DF /* MASViewAttribute.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		73A95D2D29DDAE79001A5C0B = {
+			isa = PBXGroup;
+			children = (
+				73A95D3B29DDAE79001A5C0B /* xiansheng */,
+				73A95D5529DDAE79001A5C0B /* xianshengDylib */,
+				73A95D4E29DDAE79001A5C0B /* Frameworks */,
+				73A95D3A29DDAE79001A5C0B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		73A95D3A29DDAE79001A5C0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73A95D3929DDAE79001A5C0B /* xiansheng.app */,
+				73A95D4A29DDAE79001A5C0B /* libxianshengDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73A95D3B29DDAE79001A5C0B /* xiansheng */ = {
+			isa = PBXGroup;
+			children = (
+				73A95D3C29DDAE79001A5C0B /* icon.png */,
+				73A95D4429DDAE79001A5C0B /* Info.plist */,
+				73A95D3D29DDAE79001A5C0B /* Scripts */,
+				73A95D3F29DDAE79001A5C0B /* Config */,
+				73A95D4229DDAE79001A5C0B /* TargetApp */,
+			);
+			path = xiansheng;
+			sourceTree = "<group>";
+		};
+		73A95D3D29DDAE79001A5C0B /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				73A95D3E29DDAE79001A5C0B /* quick-resign.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		73A95D3F29DDAE79001A5C0B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				73A95D4029DDAE79001A5C0B /* MDConfig.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		73A95D4229DDAE79001A5C0B /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				73A95D9A29DDAE86001A5C0B /* xianshen_1.9.2.ipa */,
+				73A95D4329DDAE79001A5C0B /* put ipa or app here */,
+			);
+			path = TargetApp;
+			sourceTree = "<group>";
+		};
+		73A95D4E29DDAE79001A5C0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73A95D4F29DDAE79001A5C0B /* JavaScriptCore.framework */,
+				73A95D5129DDAE79001A5C0B /* Foundation.framework */,
+				73A95D5329DDAE79001A5C0B /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		73A95D5529DDAE79001A5C0B /* xianshengDylib */ = {
+			isa = PBXGroup;
+			children = (
+				73A95D8E29DDAE79001A5C0B /* xianshengDylib.h */,
+				73A95D9029DDAE79001A5C0B /* xianshengDylib.m */,
+				7329F3D729E00472007067DF /* HDWindowLogger */,
+				7329F3E129E00472007067DF /* Masonry */,
+				73A95D5629DDAE79001A5C0B /* Logos */,
+				73A95D5A29DDAE79001A5C0B /* Config */,
+				73A95D6729DDAE79001A5C0B /* Trace */,
+				73A95D7F29DDAE79001A5C0B /* Tools */,
+				73A95D8629DDAE79001A5C0B /* AntiAntiDebug */,
+				73A95D8929DDAE79001A5C0B /* fishhook */,
+				73A95D8429DDAE79001A5C0B /* Supporting Files */,
+			);
+			path = xianshengDylib;
+			sourceTree = "<group>";
+		};
+		73A95D5629DDAE79001A5C0B /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				73A95D9C29DDB1F9001A5C0B /* RNSScreen.h */,
+				73A95D5729DDAE79001A5C0B /* xianshengDylib.xm */,
+				73A95D5829DDAE79001A5C0B /* xianshengDylib.mm */,
+				7329F41F29E0069F007067DF /* TNetwork.h */,
+				7329F41E29E0069F007067DF /* TNetwork.m */,
+				7329F41A29E0051E007067DF /* test.h */,
+				7329F41B29E0051E007067DF /* test.m */,
+			);
+			path = Logos;
+			sourceTree = "<group>";
+		};
+		73A95D5A29DDAE79001A5C0B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				73A95D5B29DDAE79001A5C0B /* MDConfigManager.h */,
+				73A95D5D29DDAE79001A5C0B /* MDConfigManager.m */,
+				73A95D5F29DDAE79001A5C0B /* MDCycriptManager.h */,
+				73A95D6129DDAE79001A5C0B /* MDCycriptManager.m */,
+				73A95D6329DDAE79001A5C0B /* MDMethodTrace.h */,
+				73A95D6529DDAE79001A5C0B /* MDMethodTrace.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		73A95D6729DDAE79001A5C0B /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				73A95D6829DDAE79001A5C0B /* a1a2-selectortramps-arm.s */,
+				73A95D6A29DDAE79001A5C0B /* a1a2-selectortramps-arm64.s */,
+				73A95D6C29DDAE79001A5C0B /* a1a2-selectortramps-i386.s */,
+				73A95D6E29DDAE79001A5C0B /* a1a2-selectortramps-x86_64.s */,
+				73A95D7029DDAE79001A5C0B /* a2a3-selectortramps-arm.s */,
+				73A95D7229DDAE79001A5C0B /* a2a3-selectortramps-i386.s */,
+				73A95D7429DDAE79001A5C0B /* a2a3-selectortramps-x86_64.s */,
+				73A95D7629DDAE79001A5C0B /* OCMethodTrace.h */,
+				73A95D7829DDAE79001A5C0B /* OCMethodTrace.m */,
+				73A95D7A29DDAE79001A5C0B /* OCSelectorTrampolines.h */,
+				73A95D7C29DDAE79001A5C0B /* OCSelectorTrampolines.mm */,
+				73A95D7E29DDAE79001A5C0B /* selectortramps.mac */,
+			);
+			path = Trace;
+			sourceTree = "<group>";
+		};
+		73A95D7F29DDAE79001A5C0B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				73A95D8029DDAE79001A5C0B /* LLDBTools.h */,
+				73A95D8229DDAE79001A5C0B /* LLDBTools.mm */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		73A95D8429DDAE79001A5C0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				73A95D8529DDAE79001A5C0B /* xianshengDylib-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		73A95D8629DDAE79001A5C0B /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				73A95D8729DDAE79001A5C0B /* AntiAntiDebug.m */,
+			);
+			path = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		73A95D8929DDAE79001A5C0B /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				73A95D8A29DDAE79001A5C0B /* fishhook.c */,
+				73A95D8C29DDAE79001A5C0B /* fishhook.h */,
+			);
+			path = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		73A95D4829DDAE79001A5C0B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73A95D6029DDAE79001A5C0B /* MDCycriptManager.h in Headers */,
+				73A95D6429DDAE79001A5C0B /* MDMethodTrace.h in Headers */,
+				7329F42129E0069F007067DF /* TNetwork.h in Headers */,
+				73A95D8D29DDAE79001A5C0B /* fishhook.h in Headers */,
+				7329F3FE29E00472007067DF /* HDLoggerTableViewCell.h in Headers */,
+				7329F41C29E0051E007067DF /* test.h in Headers */,
+				73A95D9D29DDB1F9001A5C0B /* RNSScreen.h in Headers */,
+				7329F3FD29E00472007067DF /* HDWindowLogger.h in Headers */,
+				73A95D8129DDAE79001A5C0B /* LLDBTools.h in Headers */,
+				7329F40629E00472007067DF /* MASConstraintMaker.h in Headers */,
+				7329F40429E00472007067DF /* MASLayoutConstraint.h in Headers */,
+				7329F40929E00472007067DF /* MASUtilities.h in Headers */,
+				7329F40E29E00472007067DF /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				7329F41729E00472007067DF /* ViewController+MASAdditions.h in Headers */,
+				7329F40C29E00472007067DF /* MASViewConstraint.h in Headers */,
+				7329F40129E00472007067DF /* MASCompositeConstraint.h in Headers */,
+				7329F41429E00472007067DF /* View+MASShorthandAdditions.h in Headers */,
+				73A95D5C29DDAE79001A5C0B /* MDConfigManager.h in Headers */,
+				7329F40D29E00472007067DF /* MASConstraint.h in Headers */,
+				7329F41529E00472007067DF /* Masonry.h in Headers */,
+				7329F40829E00472007067DF /* NSArray+MASAdditions.h in Headers */,
+				7329F40729E00472007067DF /* View+MASAdditions.h in Headers */,
+				73A95D7B29DDAE79001A5C0B /* OCSelectorTrampolines.h in Headers */,
+				7329F40529E00472007067DF /* NSArray+MASShorthandAdditions.h in Headers */,
+				7329F3FF29E00472007067DF /* HDWindowLoggerItem.h in Headers */,
+				73A95D7729DDAE79001A5C0B /* OCMethodTrace.h in Headers */,
+				73A95D8F29DDAE79001A5C0B /* xianshengDylib.h in Headers */,
+				7329F40A29E00472007067DF /* MASViewAttribute.h in Headers */,
+				7329F40329E00472007067DF /* MASConstraint+Private.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		73A95D3829DDAE79001A5C0B /* xiansheng */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73A95D9729DDAE79001A5C0B /* Build configuration list for PBXNativeTarget "xiansheng" */;
+			buildPhases = (
+				73A95D3229DDAE79001A5C0B /* Sources */,
+				73A95D3329DDAE79001A5C0B /* Frameworks */,
+				73A95D3429DDAE79001A5C0B /* ShellScript */,
+				73A95D3529DDAE79001A5C0B /* Resources */,
+				73A95D3629DDAE79001A5C0B /* CopyFiles */,
+				73A95D3729DDAE79001A5C0B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73A95D4D29DDAE79001A5C0B /* PBXTargetDependency */,
+			);
+			name = xiansheng;
+			productName = xiansheng;
+			productReference = 73A95D3929DDAE79001A5C0B /* xiansheng.app */;
+			productType = "com.apple.product-type.application";
+		};
+		73A95D4929DDAE79001A5C0B /* xianshengDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73A95D9429DDAE79001A5C0B /* Build configuration list for PBXNativeTarget "xianshengDylib" */;
+			buildPhases = (
+				73A95D4529DDAE79001A5C0B /* ShellScript */,
+				73A95D4629DDAE79001A5C0B /* Sources */,
+				73A95D4729DDAE79001A5C0B /* Frameworks */,
+				73A95D4829DDAE79001A5C0B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xianshengDylib;
+			productName = xianshengDylib;
+			productReference = 73A95D4A29DDAE79001A5C0B /* libxianshengDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		73A95D2E29DDAE79001A5C0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					73A95D3829DDAE79001A5C0B = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					73A95D4929DDAE79001A5C0B = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 73A95D3129DDAE79001A5C0B /* Build configuration list for PBXProject "xiansheng" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 73A95D2D29DDAE79001A5C0B;
+			productRefGroup = 73A95D3A29DDAE79001A5C0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73A95D3829DDAE79001A5C0B /* xiansheng */,
+				73A95D4929DDAE79001A5C0B /* xianshengDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73A95D3529DDAE79001A5C0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73A95D4129DDAE79001A5C0B /* MDConfig.plist in Resources */,
+				73A95D9B29DDAE86001A5C0B /* xianshen_1.9.2.ipa in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73A95D3429DDAE79001A5C0B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		73A95D3729DDAE79001A5C0B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		73A95D4529DDAE79001A5C0B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		73A95D3229DDAE79001A5C0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73A95D4629DDAE79001A5C0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7329F41829E00472007067DF /* MASViewConstraint.m in Sources */,
+				73A95D6229DDAE79001A5C0B /* MDCycriptManager.m in Sources */,
+				7329F40F29E00472007067DF /* MASCompositeConstraint.m in Sources */,
+				7329F42029E0069F007067DF /* TNetwork.m in Sources */,
+				7329F41229E00472007067DF /* NSArray+MASAdditions.m in Sources */,
+				73A95D6B29DDAE79001A5C0B /* a1a2-selectortramps-arm64.s in Sources */,
+				7329F41929E00472007067DF /* MASViewAttribute.m in Sources */,
+				7329F40229E00472007067DF /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				73A95D9129DDAE79001A5C0B /* xianshengDylib.m in Sources */,
+				7329F41029E00472007067DF /* MASConstraintMaker.m in Sources */,
+				73A95D6929DDAE79001A5C0B /* a1a2-selectortramps-arm.s in Sources */,
+				7329F41329E00472007067DF /* View+MASAdditions.m in Sources */,
+				73A95D6F29DDAE79001A5C0B /* a1a2-selectortramps-x86_64.s in Sources */,
+				7329F3FB29E00472007067DF /* HDLoggerTableViewCell.m in Sources */,
+				73A95D7929DDAE79001A5C0B /* OCMethodTrace.m in Sources */,
+				7329F41629E00472007067DF /* MASConstraint.m in Sources */,
+				73A95D5E29DDAE79001A5C0B /* MDConfigManager.m in Sources */,
+				73A95D8B29DDAE79001A5C0B /* fishhook.c in Sources */,
+				7329F3FC29E00472007067DF /* HDWindowLoggerItem.m in Sources */,
+				73A95D8829DDAE79001A5C0B /* AntiAntiDebug.m in Sources */,
+				7329F41D29E0051E007067DF /* test.m in Sources */,
+				73A95D7D29DDAE79001A5C0B /* OCSelectorTrampolines.mm in Sources */,
+				73A95D6D29DDAE79001A5C0B /* a1a2-selectortramps-i386.s in Sources */,
+				73A95D7329DDAE79001A5C0B /* a2a3-selectortramps-i386.s in Sources */,
+				7329F41129E00472007067DF /* MASLayoutConstraint.m in Sources */,
+				73A95D7129DDAE79001A5C0B /* a2a3-selectortramps-arm.s in Sources */,
+				7329F40B29E00472007067DF /* ViewController+MASAdditions.m in Sources */,
+				73A95D5929DDAE79001A5C0B /* xianshengDylib.mm in Sources */,
+				73A95D8329DDAE79001A5C0B /* LLDBTools.mm in Sources */,
+				73A95D7529DDAE79001A5C0B /* a2a3-selectortramps-x86_64.s in Sources */,
+				73A95D6629DDAE79001A5C0B /* MDMethodTrace.m in Sources */,
+				7329F40029E00472007067DF /* HDWindowLogger.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73A95D4D29DDAE79001A5C0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73A95D4929DDAE79001A5C0B /* xianshengDylib */;
+			targetProxy = 73A95D4C29DDAE79001A5C0B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7329F3D829E00472007067DF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7329F3D929E00472007067DF /* zh-Hans */,
+				7329F3DB29E00472007067DF /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		73A95D9229DDAE79001A5C0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		73A95D9329DDAE79001A5C0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		73A95D9529DDAE79001A5C0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9MQGT75T3N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xianshengDylib/xianshengDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libxianshengDylib.dylib";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"xianshengDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		73A95D9629DDAE79001A5C0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 9MQGT75T3N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xianshengDylib/xianshengDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libxianshengDylib.dylib";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"xianshengDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		73A95D9829DDAE79001A5C0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9MQGT75T3N;
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Hookhaosexians.xiansheng;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		73A95D9929DDAE79001A5C0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9MQGT75T3N;
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Hookhaosexians.xiansheng;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		73A95D3129DDAE79001A5C0B /* Build configuration list for PBXProject "xiansheng" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73A95D9229DDAE79001A5C0B /* Debug */,
+				73A95D9329DDAE79001A5C0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73A95D9429DDAE79001A5C0B /* Build configuration list for PBXNativeTarget "xianshengDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73A95D9529DDAE79001A5C0B /* Debug */,
+				73A95D9629DDAE79001A5C0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73A95D9729DDAE79001A5C0B /* Build configuration list for PBXNativeTarget "xiansheng" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73A95D9829DDAE79001A5C0B /* Debug */,
+				73A95D9929DDAE79001A5C0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 73A95D2E29DDAE79001A5C0B /* Project object */;
+}

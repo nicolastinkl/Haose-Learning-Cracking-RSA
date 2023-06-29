@@ -1,0 +1,49 @@
+Connected to MongoDB
+Database selected
+当前设备信息：
+Device(id="abc998df62a52630075dcbda72f040b2f53f52dc", name="iPhone", type='usb')
+[*] Attaching to process 好色先生TV
+[*] Parsing hooks from iOS_Trace.js
+button: <NSFileManager: 0x283b20330>
+[37;01mTracing - Name: -[M3U8Parser lastM3U8String] address: 0x1020fcc30[39;49;00m
+[37;01mTracing - Name: +[DADownloadUrlResolver analysisDownloadUrls:localUrl:downloadName:aesKey:finishBlock:] address: 0x102132d80[39;49;00m
+[37;01mTracing - Name: +[DADownloadUrlResolver isExistPath:] address: 0x102134acc[39;49;00m
+[37;01mTracing - Name: +[DADownloadUrlResolver analysisURL:localUrl:downloadName:aesKey:finishBlock:] address: 0x102133894[39;49;00m
+[37;01mTracing - Name: +[DADownloadUrlResolver analysisM3U8File:downloadName:localUrl:aesKey:andFinish:] address: 0x102133b1c[39;49;00m
+[37;01mTracing - Name: +[DADownloadUrlResolver analysisHTMLFile:localUrl:downloadName:finishBlock:] address: 0x102134008[39;49;00m
+[37;01mTracing - Name: +[DADownloadUrlResolver writeFileToLocalFileUrl:downloadName:contentStr:aesKey:] address: 0x1021348d8[39;49;00m
+[37;01mTracing - Name: +[DADownloadUrlResolver parseHtmlArray:returnStr:rootPath:attrName:andNameList:andArrayList:] address: 0x102134458[39;49;00m
+[37;01mTracing - Name: +[DADownloadUrlResolver getFileName:] address: 0x10213486c[39;49;00m
+[37;01mTracing - Name: -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:] address: 0x1020e7f8c[39;49;00m
+[37;01mTracing - Name: +[InitServerConnect initGetServerInfo] address: 0x1021212b8[39;49;00m
+[37;01mTracing - Name: +[InitServerConnect initGetAppUrlInfo] address: 0x102122dcc[39;49;00m
+[37;01mTracing - Name: +[InitServerConnect pingAddressTest:] address: 0x102122a58[39;49;00m
+[37;01mTracing - Name: +[InitServerConnect gettingServerInfo:uuid:] address: 0x102122204[39;49;00m
+[37;01mTracing - Name: +[InitServerConnect getServerAddrListByUrl:] address: 0x102121ed4[39;49;00m
+[37;01mTracing - Name: +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:] address: 0x102126ca4[39;49;00m
+[37;01mTracing - Name: +[ServerConnectUtils sendHttpPost:path:authorization:data:] address: 0x10212643c[39;49;00m
+[37;01mTracing - Name: +[ServerInfo getVideoAESKey] address: 0x102124298[39;49;00m
+[37;01mTracing - Name: +[AESUtils encryptString:key:] address: 0x102117e54[39;49;00m
+[37;01mTracing - Name: +[AESUtils encryptFile:sourceFile:destFile:] address: 0x102118838[39;49;00m
+[37;01mTracing - Name: +[AESUtils encryptWithCBC:key:] address: 0x102117dc0[39;49;00m
+[37;01mTracing - Name: +[AESUtils encrypt:key:] address: 0x102117d2c[39;49;00m
+[37;01mTracing - Name: +[AESUtils encryptStringCbcIv:key:iv:withBase64:] address: 0x102117fd0[39;49;00m
+[37;01mTracing - Name: +[AESUtils decrypt:key:] address: 0x1021181ac[39;49;00m
+[37;01mTracing - Name: +[AESUtils decryptString:key:] address: 0x1021182d4[39;49;00m
+[37;01mTracing - Name: +[AESUtils decryptFile:sourceFile:destFile:] address: 0x102118768[39;49;00m
+[37;01mTracing - Name: +[AESUtils decryptNoPadding:key:] address: 0x102117b8c[39;49;00m
+[37;01mTracing - Name: +[AESUtils decryptWithCBC:key:] address: 0x102118240[39;49;00m
+[37;01mTracing - Name: +[AESUtils decryptStringCbcIv:key:iv:withBase64:] address: 0x102118498[39;49;00m
+[37;01mTracing - Name: -[AESUtils baseDecryptCbcWithIv:key:iv:] address: 0x1021179a0[39;49;00m
+[37;01mTracing - Name: -[AESUtils GetRandomIvCode] address: 0x10211717c[39;49;00m
+Tracing +[AESUtils decryptWithCBC:key:]
+[+] ---------------------------------------------------------------
+[32;01m*** entering +[AESUtils decryptWithCBC:key:][39;49;00m
+[+] Caller: 0x1021047d8 xianshen!0x247d8 (0x1000247d8)
+[37;01m[+] 参数为NSData 不显示[39;49;00m
+[+] type: OS_dispatch_data
+[37;01m[+] arg3 key: qq0g6Jp2JfOHKv78q64M7w==[39;49;00m
+[+] type: __NSCFString
+[37;01m[+++++] 类 args[0]: AESUtils[39;49;00m
+[++++] type: AESUtils
+[+] --------------------------------------------------------------

@@ -1,0 +1,678 @@
+
+Thank you for using Frida!
+nantian@Mac-Studio frida-script-ios % frida -UF -l iOS_Trace.js   –no-pause
+     ____
+    / _  |   Frida 16.0.11 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to iPhone (id=4a39ccef9af42fd04b0029d24873a0d2834c0fee)
+No frontmost application on iPhone
+nantian@Mac-Studio frida-script-ios % frida -UF -l iOS_Trace.js   –no-pause
+     ____
+    / _  |   Frida 16.0.11 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to iPhone (id=4a39ccef9af42fd04b0029d24873a0d2834c0fee)
+Tracing - Name: -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:] address: 0x104f7bf8c
+Tracing - Name: +[InitServerConnect initGetServerInfo] address: 0x104fb52b8
+Tracing - Name: +[InitServerConnect initGetAppUrlInfo] address: 0x104fb6dcc
+Tracing - Name: +[InitServerConnect pingAddressTest:] address: 0x104fb6a58
+Tracing - Name: +[InitServerConnect gettingServerInfo:uuid:] address: 0x104fb6204
+Tracing - Name: +[InitServerConnect getServerAddrListByUrl:] address: 0x104fb5ed4
+Tracing - Name: -[IJKFFMoviePlayerController initWithContentURL:withOptions:] address: 0x105299c44
+Tracing - Name: -[IJKFFMoviePlayerController initWithContentURLString:withOptions:] address: 0x105299d7c
+Tracing - Name: +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:] address: 0x104fbaca4
+Tracing - Name: +[ServerConnectUtils sendHttpPost:path:authorization:data:] address: 0x104fba43c
+Tracing - Name: +[ServerInfo getVideoAESKey] address: 0x104fb8298
+[iPhone::好色先生TV ]-> Tracing +[InitServerConnect initGetServerInfo]
+[+] ---------------------------------------------------------------
+*** entering +[InitServerConnect initGetServerInfo]
+[+] 类 args[0]: InitServerConnect
+[+] type: InitServerConnect
+Tracing +[InitServerConnect pingAddressTest:]
+[+] ---------------------------------------------------------------
+*** entering +[InitServerConnect pingAddressTest:]
+Tracing +[InitServerConnect pingAddressTest:]
+[+] ---------------------------------------------------------------
+*** entering +[InitServerConnect pingAddressTest:]
+[+] arg2 pingAddressTest: https://g.pekingkeji.com/api-speed/1679631175wJdcuJ6u5ijw8gZ9820FBFA-03E0-4C91-B6C7-9896F7D07EE8
+[+] type: __NSCFString
+Tracing +[InitServerConnect pingAddressTest:]
+[+] ---------------------------------------------------------------
+*** entering +[InitServerConnect pingAddressTest:]
+[+] arg2 pingAddressTest: https://work.kokonunu.com/api-speed/16796311759o4vrk8so1EdLPl6A3ACE16-8E70-4FD6-B31A-B9E25D91517B
+[+] type: __NSCFString
+[+] arg2 pingAddressTest: https://api.vs54.cn/api-speed/1679631175edSkS3QoXswgJkG303E3451-8665-48E1-8330-4FD9A3CB13B4
+[+] type: __NSCFString
+[+] 类 args[0]: InitServerConnect
+[+] type: InitServerConnect
+[+] 类 args[0]: InitServerConnect
+[+] type: InitServerConnect
+[+] 类 args[0]: InitServerConnect
+[+] type: InitServerConnect
+*** exited +[InitServerConnect pingAddressTest:]
+[-] ---------------------------------------------------------------
+
+*** exited +[InitServerConnect initGetServerInfo]
+[-] ---------------------------------------------------------------
+
+Tracing +[InitServerConnect initGetAppUrlInfo]
+[+] ---------------------------------------------------------------
+*** entering +[InitServerConnect initGetAppUrlInfo]
+[+] 类 args[0]: InitServerConnect
+[+] type: InitServerConnect
+Tracing +[ServerConnectUtils sendHttpPost:path:authorization:data:]
+[+] ---------------------------------------------------------------
+*** entering +[ServerConnectUtils sendHttpPost:path:authorization:data:]
+[+] arg2 sendHttpPost: https://g.pekingkeji.com
+[+] type: __NSCFString
+[+] arg3 path: {
+    m = g;
+    p = "/svrlist";
+    s = settings;
+}
+[+] type: __NSDictionaryI
+[+] arg4 authorization:
+[+] type: __NSCFConstantString
+[+] arg5 data:
+[+] type: __NSCFConstantString
+[+] 类 args[0]: ServerConnectUtils
+[+] type: ServerConnectUtils
+[返回值] __NSCFStringretval: {"code": 0, "msg": "success", "svrlist": {"apigw": [{"protocol": "https", "host": "api.vs54.cn"}, {"protocol": "https", "host": "g.pekingkeji.com"}, {"protocol": "https", "host": "work.kokonunu.com"}], "video_view": [{"protocol": "", "host": "", "aeskey": "TwtsEgjErnXRwOo1ofUQ2g==", "rekey": ""}], "img_view": [{"protocol": "", "host": "", "aeskey": "1V6WW9fMB2MAPOVOD2DRfw=="}], "static_view": [{"protocol": "https", "host": "page.tjruite.cn", "aeskey": "BQkMAgQADg0HDwYBCggLAw=="}]}, "watermark": ""}
+[+] type: __NSCFString
+*** exited +[ServerConnectUtils sendHttpPost:path:authorization:data:]
+[-] ---------------------------------------------------------------
+
+Tracing +[InitServerConnect pingAddressTest:]
+[+] ---------------------------------------------------------------
+*** entering +[InitServerConnect pingAddressTest:]
+Tracing +[InitServerConnect pingAddressTest:]
+[+] ---------------------------------------------------------------
+*** entering +[InitServerConnect pingAddressTest:]
+Tracing +[InitServerConnect pingAddressTest:]
+[+] ---------------------------------------------------------------
+*** entering +[InitServerConnect pingAddressTest:]
+[+] arg2 pingAddressTest: https://work.kokonunu.com/api-speed/1679631176YSf4YpCXtHcdfquEF97D36B-FD7E-4F8B-8372-C27D37E087CC
+[+] type: __NSCFString
+[+] 类 args[0]: InitServerConnect
+[+] type: InitServerConnect
+[+] arg2 pingAddressTest: https://g.pekingkeji.com/api-speed/1679631176PqXbCr6dJupTyQ504E0A927-D9B9-43A8-961A-3EA07C8F29CA
+[+] type: __NSCFString
+[+] 类 args[0]: InitServerConnect
+[+] type: InitServerConnect
+[+] arg2 pingAddressTest: https://api.vs54.cn/api-speed/1679631176uHaTJhOs0dk8AtT5AA88720-D4DC-4620-822A-CB7917F33D75
+[+] type: __NSCFString
+[+] 类 args[0]: InitServerConnect
+[+] type: InitServerConnect
+*** exited +[InitServerConnect pingAddressTest:]
+[-] ---------------------------------------------------------------
+
+[返回值] __NSCFStringretval: {
+  "did" : "Bbc0cta7npQhNxZlJ7KgSw==",
+  "video_aeskey" : "TwtsEgjErnXRwOo1ofUQ2g==",
+  "img_aeskey" : "1V6WW9fMB2MAPOVOD2DRfw==",
+  "watermark" : ""
+}
+[+] type: __NSCFString
+*** exited +[InitServerConnect initGetAppUrlInfo]
+[-] ---------------------------------------------------------------
+
+Tracing -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] ---------------------------------------------------------------
+*** entering -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] arg2 rnSendGetRequest: {
+    p = "/user/token/refresh";
+    s = passport;
+}
+[+] type: __NSDictionaryM
+[+] arg3 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg4 data:
+[+] type: __NSCFConstantString
+[+] arg5 resolve: <__NSMallocBlock__: 0x282c13900>
+[+] type: __NSMallocBlock__
+[+] arg6 rejecter: <__NSMallocBlock__: 0x282c12f10>
+[+] type: __NSMallocBlock__
+[+] 类 args[0]: <RNServiceConnect: 0x28202e990>
+[+] type: RNServiceConnect
+Tracing +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] ---------------------------------------------------------------
+*** entering +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] arg2 sendHttpPostAsync: https://g.pekingkeji.com
+[+] type: __NSCFString
+[+] arg3 path: {
+    m = g;
+    p = "/user/token/refresh";
+    s = passport;
+}
+[+] type: __NSDictionaryM
+[+] arg4 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg5 data:
+[+] type: __NSCFConstantString
+[+] arg6 callback: <__NSStackBlock__: 0x16ba024f8>
+[+] type: __NSStackBlock__
+[+] arg7 errorCallback: <__NSStackBlock__: 0x16ba024d0>
+[+] type: __NSStackBlock__
+[+] 类 args[0]: ServerConnectUtils
+[+] type: ServerConnectUtils
+[返回值] __NSCFStringretval: https://g.pekingkeji.com
+[+] type: __NSCFString
+*** exited +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[-] ---------------------------------------------------------------
+
+[返回值] __NSDictionaryMretval: {
+    p = "/user/token/refresh";
+    s = passport;
+}
+[+] type: __NSDictionaryM
+*** exited -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[-] ---------------------------------------------------------------
+
+*** exited +[InitServerConnect pingAddressTest:]
+[-] ---------------------------------------------------------------
+
+Tracing +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] ---------------------------------------------------------------
+*** entering +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] arg2 sendHttpPostAsync: https://g.pekingkeji.com
+[+] type: __NSCFString
+[+] arg3 path: {
+    m = p;
+    p = "/user/profile/personal/lookup";
+    s = passport;
+}
+[+] type: __NSDictionaryM
+[+] arg4 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg5 data: {"userid":"4yb81d"}
+[+] type: __NSCFString
+[+] arg6 callback: <__NSStackBlock__: 0x16b9764f8>
+[+] type: __NSStackBlock__
+[+] arg7 errorCallback: <__NSStackBlock__: 0x16b9764d0>
+[+] type: __NSStackBlock__
+[+] 类 args[0]: ServerConnectUtils
+[+] type: ServerConnectUtils
+[返回值] __NSCFStringretval: https://g.pekingkeji.com
+[+] type: __NSCFString
+*** exited +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[-] ---------------------------------------------------------------
+
+Tracing -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] ---------------------------------------------------------------
+*** entering -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] arg2 rnSendGetRequest: {
+    p = "/app-page/taginfo/all";
+    s = applayout;
+}
+[+] type: __NSDictionaryM
+[+] arg3 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg4 data:
+[+] type: __NSCFConstantString
+[+] arg5 resolve: <__NSMallocBlock__: 0x282c7e3d0>
+[+] type: __NSMallocBlock__
+[+] arg6 rejecter: <__NSMallocBlock__: 0x282c7e3a0>
+[+] type: __NSMallocBlock__
+[+] 类 args[0]: <RNServiceConnect: 0x28202e990>
+[+] type: RNServiceConnect
+Tracing +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] ---------------------------------------------------------------
+*** entering +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] arg2 sendHttpPostAsync: https://g.pekingkeji.com
+[+] type: __NSCFString
+[+] arg3 path: {
+    m = g;
+    p = "/app-page/taginfo/all";
+    s = applayout;
+}
+[+] type: __NSDictionaryM
+[+] arg4 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg5 data:
+[+] type: __NSCFConstantString
+[+] arg6 callback: <__NSStackBlock__: 0x16b9764f8>
+[+] type: __NSStackBlock__
+[+] arg7 errorCallback: <__NSStackBlock__: 0x16b9764d0>
+[+] type: __NSStackBlock__
+[+] 类 args[0]: ServerConnectUtils
+[+] type: ServerConnectUtils
+[返回值] __NSCFStringretval: https://g.pekingkeji.com
+[+] type: __NSCFString
+*** exited +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[-] ---------------------------------------------------------------
+
+[返回值] __NSDictionaryMretval: {
+    p = "/app-page/taginfo/all";
+    s = applayout;
+}
+[+] type: __NSDictionaryM
+*** exited -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[-] ---------------------------------------------------------------
+
+Tracing -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] ---------------------------------------------------------------
+*** entering -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] arg2 rnSendGetRequest: {
+    p = "/app-page/navbars/actor";
+    s = applayout;
+}
+[+] type: __NSDictionaryM
+[+] arg3 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg4 data:
+[+] type: __NSCFConstantString
+[+] arg5 resolve: <__NSMallocBlock__: 0x282c7e0a0>
+[+] type: __NSMallocBlock__
+[+] arg6 rejecter: <__NSMallocBlock__: 0x282c7e5e0>
+[+] type: __NSMallocBlock__
+[+] 类 args[0]: <RNServiceConnect: 0x28202e990>
+[+] type: RNServiceConnect
+Tracing +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] ---------------------------------------------------------------
+*** entering +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] arg2 sendHttpPostAsync: https://g.pekingkeji.com
+[+] type: __NSCFString
+[+] arg3 path: {
+    m = g;
+    p = "/app-page/navbars/actor";
+    s = applayout;
+}
+[+] type: __NSDictionaryM
+[+] arg4 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg5 data:
+[+] type: __NSCFConstantString
+[+] arg6 callback: <__NSStackBlock__: 0x16b9764f8>
+[+] type: __NSStackBlock__
+[+] arg7 errorCallback: <__NSStackBlock__: 0x16b9764d0>
+[+] type: __NSStackBlock__
+[+] 类 args[0]: ServerConnectUtils
+[+] type: ServerConnectUtils
+[返回值] __NSCFStringretval: https://g.pekingkeji.com
+[+] type: __NSCFString
+*** exited +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[-] ---------------------------------------------------------------
+
+[返回值] __NSDictionaryMretval: {
+    p = "/app-page/navbars/actor";
+    s = applayout;
+}
+[+] type: __NSDictionaryM
+*** exited -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[-] ---------------------------------------------------------------
+
+Tracing -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] ---------------------------------------------------------------
+*** entering -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] arg2 rnSendGetRequest: {
+    p = "/app/initinfo";
+    s = rua;
+}
+[+] type: __NSDictionaryM
+[+] arg3 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg4 data: {"userid":"4yb81d"}
+[+] type: __NSCFString
+[+] arg5 resolve: <__NSMallocBlock__: 0x282c7ebb0>
+[+] type: __NSMallocBlock__
+[+] arg6 rejecter: <__NSMallocBlock__: 0x282c7e370>
+[+] type: __NSMallocBlock__
+[+] 类 args[0]: <RNServiceConnect: 0x28202e990>
+[+] type: RNServiceConnect
+Tracing +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] ---------------------------------------------------------------
+*** entering +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] arg2 sendHttpPostAsync: https://g.pekingkeji.com
+[+] type: __NSCFString
+[+] arg3 path: {
+    m = g;
+    p = "/app/initinfo";
+    s = rua;
+}
+[+] type: __NSDictionaryM
+[+] arg4 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg5 data: {"userid":"4yb81d"}
+[+] type: __NSCFString
+[+] arg6 callback: <__NSStackBlock__: 0x16b9764f8>
+[+] type: __NSStackBlock__
+[+] arg7 errorCallback: <__NSStackBlock__: 0x16b9764d0>
+[+] type: __NSStackBlock__
+[+] 类 args[0]: ServerConnectUtils
+[+] type: ServerConnectUtils
+[返回值] __NSCFStringretval: https://g.pekingkeji.com
+[+] type: __NSCFString
+*** exited +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[-] ---------------------------------------------------------------
+
+[返回值] __NSDictionaryMretval: {
+    p = "/app/initinfo";
+    s = rua;
+}
+[+] type: __NSDictionaryM
+*** exited -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[-] ---------------------------------------------------------------
+
+Tracing -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] ---------------------------------------------------------------
+*** entering -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] arg2 rnSendGetRequest: {
+    p = "/app/user/privilege/all";
+    s = growth;
+}
+[+] type: __NSDictionaryM
+[+] arg3 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg4 data: {"userid":"4yb81d"}
+[+] type: __NSCFString
+[+] arg5 resolve: <__NSMallocBlock__: 0x282c7d920>
+[+] type: __NSMallocBlock__
+[+] arg6 rejecter: <__NSMallocBlock__: 0x282c7dd10>
+[+] type: __NSMallocBlock__
+[+] 类 args[0]: <RNServiceConnect: 0x28202e990>
+[+] type: RNServiceConnect
+Tracing +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] ---------------------------------------------------------------
+*** entering +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] arg2 sendHttpPostAsync: https://g.pekingkeji.com
+[+] type: __NSCFString
+[+] arg3 path: {
+    m = g;
+    p = "/app/user/privilege/all";
+    s = growth;
+}
+[+] type: __NSDictionaryM
+[+] arg4 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg5 data: {"userid":"4yb81d"}
+[+] type: __NSCFString
+[+] arg6 callback: <__NSStackBlock__: 0x16b9764f8>
+[+] type: __NSStackBlock__
+[+] arg7 errorCallback: <__NSStackBlock__: 0x16b9764d0>
+[+] type: __NSStackBlock__
+[+] 类 args[0]: ServerConnectUtils
+[+] type: ServerConnectUtils
+[返回值] __NSCFStringretval: https://g.pekingkeji.com
+[+] type: __NSCFString
+*** exited +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[-] ---------------------------------------------------------------
+
+[返回值] __NSDictionaryMretval: {
+    p = "/app/user/privilege/all";
+    s = growth;
+}
+[+] type: __NSDictionaryM
+*** exited -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[-] ---------------------------------------------------------------
+
+Tracing -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] ---------------------------------------------------------------
+*** entering -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] arg2 rnSendGetRequest: {
+    p = "/broadcast/config";
+    s = xjconf;
+}
+[+] type: __NSDictionaryM
+[+] arg3 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg5 resolve: <__NSMallocBlock__: 0x282c65920>
+[+] type: __NSMallocBlock__
+[+] arg6 rejecter: <__NSMallocBlock__: 0x282c65bc0>
+[+] type: __NSMallocBlock__
+[+] 类 args[0]: <RNServiceConnect: 0x28202e990>
+[+] type: RNServiceConnect
+Tracing +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] ---------------------------------------------------------------
+*** entering +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] arg2 sendHttpPostAsync: https://g.pekingkeji.com
+[+] type: __NSCFString
+[+] arg3 path: {
+    m = g;
+    p = "/broadcast/config";
+    s = xjconf;
+}
+[+] type: __NSDictionaryM
+[+] arg4 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg6 callback: <__NSStackBlock__: 0x16b9764f8>
+[+] type: __NSStackBlock__
+[+] arg7 errorCallback: <__NSStackBlock__: 0x16b9764d0>
+[+] type: __NSStackBlock__
+[+] 类 args[0]: ServerConnectUtils
+[+] type: ServerConnectUtils
+[返回值] __NSCFStringretval: https://g.pekingkeji.com
+[+] type: __NSCFString
+*** exited +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[-] ---------------------------------------------------------------
+
+[返回值] __NSDictionaryMretval: {
+    p = "/broadcast/config";
+    s = xjconf;
+}
+[+] type: __NSDictionaryM
+*** exited -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[-] ---------------------------------------------------------------
+
+Tracing -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] ---------------------------------------------------------------
+*** entering -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] arg2 rnSendGetRequest: {
+    p = "/app-page/advertise/all";
+    s = applayout;
+}
+[+] type: __NSDictionaryM
+[+] arg3 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg4 data:
+[+] type: __NSCFConstantString
+[+] arg5 resolve: <__NSMallocBlock__: 0x282c66010>
+[+] type: __NSMallocBlock__
+[+] arg6 rejecter: <__NSMallocBlock__: 0x282c65830>
+[+] type: __NSMallocBlock__
+[+] 类 args[0]: <RNServiceConnect: 0x28202e990>
+[+] type: RNServiceConnect
+Tracing +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] ---------------------------------------------------------------
+*** entering +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] arg2 sendHttpPostAsync: https://g.pekingkeji.com
+[+] type: __NSCFString
+[+] arg3 path: {
+    m = g;
+    p = "/app-page/advertise/all";
+    s = applayout;
+}
+[+] type: __NSDictionaryM
+[+] arg4 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg5 data:
+[+] type: __NSCFConstantString
+[+] arg6 callback: <__NSStackBlock__: 0x16b9764f8>
+[+] type: __NSStackBlock__
+[+] arg7 errorCallback: <__NSStackBlock__: 0x16b9764d0>
+[+] type: __NSStackBlock__
+[+] 类 args[0]: ServerConnectUtils
+[+] type: ServerConnectUtils
+[返回值] __NSCFStringretval: https://g.pekingkeji.com
+[+] type: __NSCFString
+*** exited +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[-] ---------------------------------------------------------------
+
+[返回值] __NSDictionaryMretval: {
+    p = "/app-page/advertise/all";
+    s = applayout;
+}
+[+] type: __NSDictionaryM
+*** exited -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[-] ---------------------------------------------------------------
+
+Tracing -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] ---------------------------------------------------------------
+*** entering -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] arg2 rnSendGetRequest: {
+    p = "/app/bind-mobile/config";
+    s = growth;
+}
+[+] type: __NSDictionaryM
+[+] arg3 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg5 resolve: <__NSMallocBlock__: 0x282c7d1a0>
+[+] type: __NSMallocBlock__
+[+] arg6 rejecter: <__NSMallocBlock__: 0x282c7d7d0>
+[+] type: __NSMallocBlock__
+[+] 类 args[0]: <RNServiceConnect: 0x28202e990>
+[+] type: RNServiceConnect
+Tracing +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] ---------------------------------------------------------------
+*** entering +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] arg2 sendHttpPostAsync: https://g.pekingkeji.com
+[+] type: __NSCFString
+[+] arg3 path: {
+    m = g;
+    p = "/app/bind-mobile/config";
+    s = growth;
+}
+[+] type: __NSDictionaryM
+[+] arg4 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg6 callback: <__NSStackBlock__: 0x16b9764f8>
+[+] type: __NSStackBlock__
+[+] arg7 errorCallback: <__NSStackBlock__: 0x16b9764d0>
+[+] type: __NSStackBlock__
+[+] 类 args[0]: ServerConnectUtils
+[+] type: ServerConnectUtils
+[返回值] __NSCFStringretval: https://g.pekingkeji.com
+[+] type: __NSCFString
+*** exited +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[-] ---------------------------------------------------------------
+
+[返回值] __NSDictionaryMretval: {
+    p = "/app/bind-mobile/config";
+    s = growth;
+}
+[+] type: __NSDictionaryM
+*** exited -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[-] ---------------------------------------------------------------
+
+Tracing -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] ---------------------------------------------------------------
+*** entering -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] arg2 rnSendGetRequest: {
+    p = "/qp/app/config/v2";
+    s = qpxj;
+}
+[+] type: __NSDictionaryM
+[+] arg3 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg4 data: {"userid":"4yb81d"}
+[+] type: __NSCFString
+[+] arg5 resolve: <__NSMallocBlock__: 0x282c65f80>
+[+] type: __NSMallocBlock__
+[+] arg6 rejecter: <__NSMallocBlock__: 0x282c65ce0>
+[+] type: __NSMallocBlock__
+[+] 类 args[0]: <RNServiceConnect: 0x28202e990>
+[+] type: RNServiceConnect
+Tracing +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] ---------------------------------------------------------------
+*** entering +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] arg2 sendHttpPostAsync: https://g.pekingkeji.com
+[+] type: __NSCFString
+[+] arg3 path: {
+    m = g;
+    p = "/qp/app/config/v2";
+    s = qpxj;
+}
+[+] type: __NSDictionaryM
+[+] arg4 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg5 data: {"userid":"4yb81d"}
+[+] type: __NSCFString
+[+] arg6 callback: <__NSStackBlock__: 0x16b9764f8>
+[+] type: __NSStackBlock__
+[+] arg7 errorCallback: <__NSStackBlock__: 0x16b9764d0>
+[+] type: __NSStackBlock__
+[+] 类 args[0]: ServerConnectUtils
+[+] type: ServerConnectUtils
+[返回值] __NSCFStringretval: https://g.pekingkeji.com
+[+] type: __NSCFString
+*** exited +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[-] ---------------------------------------------------------------
+
+[返回值] __NSDictionaryMretval: {
+    p = "/qp/app/config/v2";
+    s = qpxj;
+}
+[+] type: __NSDictionaryM
+*** exited -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[-] ---------------------------------------------------------------
+
+Tracing -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] ---------------------------------------------------------------
+*** entering -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[+] arg2 rnSendGetRequest: {
+    p = "/app-page/navbars/home";
+    s = applayout;
+}
+[+] type: __NSDictionaryM
+[+] arg3 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg4 data:
+[+] type: __NSCFConstantString
+[+] arg5 resolve: <__NSMallocBlock__: 0x282c7cea0>
+[+] type: __NSMallocBlock__
+[+] arg6 rejecter: <__NSMallocBlock__: 0x282c7cb40>
+[+] type: __NSMallocBlock__
+[+] 类 args[0]: <RNServiceConnect: 0x28202e990>
+[+] type: RNServiceConnect
+Tracing +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] ---------------------------------------------------------------
+*** entering +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[+] arg2 sendHttpPostAsync: https://g.pekingkeji.com
+[+] type: __NSCFString
+[+] arg3 path: {
+    m = g;
+    p = "/app-page/navbars/home";
+    s = applayout;
+}
+[+] type: __NSDictionaryM
+[+] arg4 authorization: -9-4MpOVW5nE5AzZXtT49FWN4pdIMi0mt1cb0FkUvxvCsZvjtHs4S-KrEaTeUAWrZY_lfTKdThSk_cJvQKYFUBHiheGeplnnAogfVd1Y9lqVLV6_MiHzc8BouPiA7w5H
+[+] type: __NSCFString
+[+] arg5 data:
+[+] type: __NSCFConstantString
+[+] arg6 callback: <__NSStackBlock__: 0x16b9764f8>
+[+] type: __NSStackBlock__
+[+] arg7 errorCallback: <__NSStackBlock__: 0x16b9764d0>
+[+] type: __NSStackBlock__
+[+] 类 args[0]: ServerConnectUtils
+[+] type: ServerConnectUtils
+[返回值] __NSCFStringretval: https://g.pekingkeji.com
+[+] type: __NSCFString
+*** exited +[ServerConnectUtils sendHttpPostAsync:path:authorization:data:callback:errorCallback:]
+[-] ---------------------------------------------------------------
+
+[返回值] __NSDictionaryMretval: {
+    p = "/app-page/navbars/home";
+    s = applayout;
+}
+[+] type: __NSDictionaryM
+*** exited -[RNServiceConnect rnSendGetRequest:authorization:data:resolve:rejecter:]
+[-] ---------------------------------------------------------------
+
+*** exited +[InitServerConnect pingAddressTest:]
+[-] ---------------------------------------------------------------
+
+*** exited +[InitServerConnect pingAddressTest:]
+[-] ---------------------------------------------------------------
+
