@@ -77,9 +77,11 @@ base64String: YjBhZmY1ZWIgNjE0NjA0NjcgNGMzZTFlZWQgYzNiOTQ5NGEgMTZlZGE2YjggMGU2OT
 ![](screenshots/Snipaste_2023-06-29_10-05-59.png)
 
 #### 附件：
-1: new_haosexiansheng_8ATXaw.tar.gz 是抓取所有协议数据以及m3u8下载地址的数据库文件
-2: Hookhaosexians目录是好色先生的插件目录，为了直接HOOK生成App视频抓取逻辑和解密逻辑，通过python+hook配合使用
-3: ipa文件是目标app
+ - 1: new_haosexiansheng_8ATXaw.tar.gz 是抓取所有协议数据以及m3u8下载地址的数据库文件
+
+ - 2: Hookhaosexians目录是好色先生的插件目录，为了直接HOOK生成App视频抓取逻辑和解密逻辑，通过python+hook配合使用
+
+ - 3: ipa文件是目标app
 
 #### 效果图：
 ![](screenshots/dad43853c26995bc326efafb2e4480f0.jpg)
