@@ -71,6 +71,9 @@ base64String: YjBhZmY1ZWIgNjE0NjA0NjcgNGMzZTFlZWQgYzNiOTQ5NGEgMTZlZGE2YjggMGU2OT
 ![](screenshots/Snipaste_2023-03-30_15-13-18.png)
 
 #### 2:详情见datalog目录，都是记录协议抓取的关键日志
+![](screenshots/Snipaste_2023-06-29_11-02-56.png)
+![](screenshots/Snipaste_2023-06-29_11-03-01.png)
+![](screenshots/Snipaste_2023-06-29_11-03-08.png)
 
 #### 爬取后的mangoDB文件:
 ![](screenshots/Snipaste_2023-06-29_10-03-18.png)
