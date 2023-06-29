@@ -1,10 +1,12 @@
 # crach-haosexiansheng
-破解好色先生协议，编写协议抓取python脚本，以及批量获取数据和视频的核心技巧
+    破解好色先生协议，编写协议抓取python脚本，以及批量获取数据和视频的核心技巧
 首先好色先生的网址非常好找，直接谷歌搜索：好色先生 ，因为他们会定期更换网址，所以谷歌SEO他们定期会更换，但是基本内容还是一致的。
+
 ![](screenshots/Snipaste_2023-06-29_09-52-11.png)
+
 -----------------------------
 
-> 破解前先说说这个app，这个app本身是kehu付费2w以上我帮忙破解的，由于有一定的技术性，所以分享出来。本身app协议使用AES加密， 密钥通过请求初始化服务器时，会把协议解密密钥/图片解密密钥/M3U8解密密钥/TS文件解密密钥一起下发本地，然后本地在执行渲染图片和播放视频时实时解密。因为解密过程比较多，所以相对比较复杂，需要耐心一点。
+### 破解前先说说这个app，这个app本身是kehu付费2w以上我帮忙破解的，由于有一定的技术性，所以分享出来。本身app协议使用AES加密， 密钥通过请求初始化服务器时，会把协议解密密钥/图片解密密钥/M3U8解密密钥/TS文件解密密钥一起下发本地，然后本地在执行渲染图片和播放视频时实时解密。因为解密过程比较多，所以相对比较复杂，需要耐心一点。
 
 # HOOK 整体破解以及抓取App所有信息流程图：
 
@@ -44,14 +46,14 @@
 
 ![](screenshots/new13ea83fee56617bca6b426575deb3d83.jpeg)
 ![](screenshots/new2296ffc8e3d48ae80136ccb5637cffd9.webm)
-
+![](screenshots/Snipaste_2023-06-29_10-40-40.png)
  
  
 
 # 协议破解
 
 #### 1：心跳破解
-```
+``` shell
 [+] Caller: 0x100e8453c /var/containers/Bundle/Application/D3499BCC-B76B-47AB-98BC-90687AA9925F/xianshen.app/xianshen!+[vGrowthConnectUtils sendvGrowthHttpPost:host:path:aesKey:json:callback:errorCallback:]
 [+] 参数为NSData 不显示
 [+] type: NSConcreteMutableData
@@ -61,9 +63,10 @@
 [++++] type: AESUtils
 打印hex:
 base64String: YjBhZmY1ZWIgNjE0NjA0NjcgNGMzZTFlZWQgYzNiOTQ5NGEgMTZlZGE2YjggMGU2OTQ5N2IgMzkwMTgxYmIgZDczM2UxMDIgZGIwMjBiMTMgZThhMWMyNTIgOWY4ODhhY2EgMGZhODdhNGQgYTRhZTRhY2IgMzcxMWUwMWYgMzU2ZGQ1ODUgMzliM2NhYjAgNDkxYmU3ZDcgM2YzODg2NjEgNWY0Zjc1NDUgZWZkZTg1YWIgMTM3ODgzY2IgYzk1ZmYxZTAgNTc2ZTA2ZmYgMWU1MjlmYWQ=
-```
+
 
  curl -v -X POST 'https://vapi.intcele.com/app/cmd/heartbeat' -H 'Content-Type: application/json' -H 'Cookie:' -d '(null)'
+````
 
 -[](screenshots/Snipaste_2023-03-30_15-13-18.png)
 
