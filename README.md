@@ -68,19 +68,19 @@ base64String: YjBhZmY1ZWIgNjE0NjA0NjcgNGMzZTFlZWQgYzNiOTQ5NGEgMTZlZGE2YjggMGU2OT
  curl -v -X POST 'https://vapi.intcele.com/app/cmd/heartbeat' -H 'Content-Type: application/json' -H 'Cookie:' -d '(null)'
 ````
 
--[](screenshots/Snipaste_2023-03-30_15-13-18.png)
+![](screenshots/Snipaste_2023-03-30_15-13-18.png)
 
 #### 2:详情见datalog目录，都是记录协议抓取的关键日志
 
 #### 爬取后的mangoDB文件:
--[](screenshots/Snipaste_2023-06-29_10-03-18.png)
--[](screenshots/Snipaste_2023-06-29_10-05-59.png)
+![](screenshots/Snipaste_2023-06-29_10-03-18.png)
+![](screenshots/Snipaste_2023-06-29_10-05-59.png)
 
 #### 附件：
 1: new_haosexiansheng_8ATXaw.tar.gz 是抓取所有协议数据以及m3u8下载地址的数据库文件
 2: Hookhaosexians目录是好色先生的插件目录，为了直接HOOK生成App视频抓取逻辑和解密逻辑，通过python+hook配合使用
-3: 
+3: ipa文件是目标app
 
 #### 效果图：
--[](screenshots/dad43853c26995bc326efafb2e4480f0.jpg)
--[](screenshots/new2296ffc8e3d48ae80136ccb5637cffd9.webm)
+![](screenshots/dad43853c26995bc326efafb2e4480f0.jpg)
+![](screenshots/new2296ffc8e3d48ae80136ccb5637cffd9.webm)
