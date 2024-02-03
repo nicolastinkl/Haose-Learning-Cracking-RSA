@@ -15,7 +15,7 @@
 
 ![](screenshots/RPReplay_Final1688003331.gif)
 
-![](https://raw.githubusercontent.com/nicolastinkl/Crach-haosexiansheng/main/document_6192678271952358944.mp4)
+![](https://github.com/nicolastinkl/Crach-haosexiansheng/blob/main/document_6192678271952358944.mp4)
 
 # 如何使用脚本：
 
